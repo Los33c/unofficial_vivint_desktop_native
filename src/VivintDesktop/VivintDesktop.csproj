@@ -12,7 +12,7 @@
     <RootNamespace>VivintDesktop</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets\app.ico</ApplicationIcon>
-    <Version>1.0</Version>
+    <Version>1.1</Version>
     <Product>Vivint Desktop</Product>
     <Description>Personal desktop client for your own Vivint system.</Description>
   </PropertyGroup>

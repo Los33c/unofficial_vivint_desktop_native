@@ -377,6 +377,58 @@ public sealed class VivintClient : IDisposable
 
     private string? TokenFor(bool idToken) => idToken ? _idToken ?? _accessToken : _accessToken ?? _idToken;
 
+    /// <summary>
+    /// One unary gRPC call over HTTP/2. Returns the gRPC status (0 = OK), its message,
+    /// and the serialized reply. Retries once with a refreshed token on UNAUTHENTICATED.
+    /// </summary>
+    public async Task<(int status, string message, byte[] body)> GrpcUnaryAsync(string url, byte[] request, CancellationToken ct = default)
+    {
+        const int Unauthenticated = 16;
+        await EnsureFreshTokenAsync(false, ct).ConfigureAwait(false);
+        var result = await GrpcSendAsync(url, request, ct).ConfigureAwait(false);
+        if (result.status != Unauthenticated) return result;
+        await EnsureFreshTokenAsync(true, ct).ConfigureAwait(false);
+        return await GrpcSendAsync(url, request, ct).ConfigureAwait(false);
+    }
+
+    private async Task<(int status, string message, byte[] body)> GrpcSendAsync(string url, byte[] request, CancellationToken ct)
+    {
+        // gRPC framing: 1-byte compressed flag + 4-byte big-endian length + message.
+        var framed = new byte[5 + request.Length];
+        System.Buffers.Binary.BinaryPrimitives.WriteInt32BigEndian(framed.AsSpan(1), request.Length);
+        request.CopyTo(framed, 5);
+
+        using var req = new HttpRequestMessage(HttpMethod.Post, url)
+        {
+            Version = HttpVersion.Version20,
+            VersionPolicy = HttpVersionPolicy.RequestVersionExact,
+            Content = new ByteArrayContent(framed),
+        };
+        req.Content.Headers.ContentType = new MediaTypeHeaderValue("application/grpc");
+        req.Headers.TryAddWithoutValidation("TE", "trailers");
+        req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", TokenFor(false));
+
+        using var resp = await _api.SendAsync(req, ct).ConfigureAwait(false);
+        var data = await resp.Content.ReadAsByteArrayAsync(ct).ConfigureAwait(false);
+        if (!resp.IsSuccessStatusCode)
+            return (resp.StatusCode == HttpStatusCode.Unauthorized ? 16 : 2, $"HTTP {(int)resp.StatusCode}", Array.Empty<byte>());
+
+        // A call that fails before any reply sends grpc-status in the headers, not the trailers.
+        string? Meta(string name) =>
+            resp.TrailingHeaders.TryGetValues(name, out var t) ? t.FirstOrDefault()
+            : resp.Headers.TryGetValues(name, out var h) ? h.FirstOrDefault() : null;
+
+        var status = int.TryParse(Meta("grpc-status"), out var s) ? s : 2;
+        var message = Uri.UnescapeDataString(Meta("grpc-message") ?? "");
+        if (status != 0) return (status, message, Array.Empty<byte>());
+        if (data.Length < 5) return (0, message, Array.Empty<byte>());
+        if (data[0] != 0) return (2, "Compressed gRPC reply isn't supported.", Array.Empty<byte>());
+
+        var length = System.Buffers.Binary.BinaryPrimitives.ReadInt32BigEndian(data.AsSpan(1));
+        if (length < 0 || length > data.Length - 5) return (2, "Truncated gRPC reply.", Array.Empty<byte>());
+        return (0, message, data.AsSpan(5, length).ToArray());
+    }
+
     private static HttpRequestMessage Build(HttpMethod method, string url, string? json, string? bearer,
         IReadOnlyDictionary<string, string>? headers)
     {

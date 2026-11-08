@@ -101,6 +101,19 @@ public partial class MainWindow
                 AddSection("Sensors", null, ListCard(sRows));
             }
 
+            // ---------------- cameras (settings are fetched when one is opened)
+            var cameras = _state?.Devices.Where(d => d.Category == DeviceCategory.Camera).OrderBy(d => d.Name).ToList() ?? new();
+            if (cameras.Count > 0)
+            {
+                var cRows = cameras.Select(cam => (UIElement)ListRow(null, cam.Name,
+                    cam.Online == false ? "Offline" : "Online",
+                    MoreMenu(("Camera settings…", () => CameraSettingsAsync(cam), false),
+                             ("Restart camera…", () => RestartCameraAsync(cam), true)),
+                    () => _ = CameraSettingsAsync(cam),
+                    subBrush: cam.Online == false ? Res("Warn") : null));
+                AddSection("Cameras", "Video quality, night vision, recording and more for each camera.", ListCard(cRows));
+            }
+
             // ---------------- insights
             var insights = insightsT.Result ?? new();
             if (insights.Count > 0)
@@ -363,6 +376,87 @@ public partial class MainWindow
             await Do(() => _svc.UpdateSensorAsync(pid, sn.Id, new Dictionary<string, object> { ["chime_enabled"] = chime, ["voice"] = voice }),
                 $"Saving {v["name"]} settings");
         await LoadSettingsAsync();
+    }
+
+    // ---------------------------------------------------------------- camera settings
+    private CameraSettingsService? _cameraSettings;
+    private CameraSettingsService CameraSettingsApi => _cameraSettings ??= new CameraSettingsService(_client);
+
+    private async Task CameraSettingsAsync(Device cam)
+    {
+        if (_state is null) return;
+        var pid = _state.PanelId;
+        var api = CameraSettingsApi;
+
+        CameraSettings cur;
+        SetStatus($"Loading {cam.Name} settings…");
+        try { cur = await api.GetAsync(pid, cam.Id); }
+        catch (Exception ex)
+        {
+            SetStatus($"Couldn't load {cam.Name} settings.", error: true);
+            Dialog.Info(this, $"Couldn't load {cam.Name} settings", ex.Message, warning: true);
+            return;
+        }
+        SetStatus("");
+
+        var f = new Prompt($"Camera — {cam.Name}")
+            .Choice("quality", "Video quality", CameraSettings.QualityNames, cur.VideoQuality - 1)
+            .Check("night", "Night vision", cur.NightVision)
+            .Check("led", "Status light", cur.StatusLight)
+            .Check("audio", "Record audio", cur.RecordAudio)
+            .Check("person", "Record when a person is detected", cur.RecordOnPerson)
+            .Check("quiet", "Quiet mode", cur.QuietMode)
+            .Note("Not every camera model supports every option.");
+        if (!f.Ask(this, "Save")) return;
+
+        var v = f.Values;
+        var changes = new List<(string label, Func<Task> send)>();
+        var quality = int.Parse(v["quality"]) + 1;
+        if (quality > 0 && quality != cur.VideoQuality)
+            changes.Add(("video quality", () => api.SetVideoQualityAsync(pid, cam.Id, quality)));
+        void Toggle(string key, bool now, string label, Func<string, string, bool, CancellationToken, Task> set)
+        {
+            var on = v[key] == "1";
+            if (on != now) changes.Add((label, () => set(pid, cam.Id, on, default)));
+        }
+        Toggle("night", cur.NightVision, "night vision", api.SetNightVisionAsync);
+        Toggle("led", cur.StatusLight, "status light", api.SetStatusLightAsync);
+        Toggle("audio", cur.RecordAudio, "audio recording", api.SetRecordAudioAsync);
+        Toggle("person", cur.RecordOnPerson, "person recording", api.SetRecordOnPersonAsync);
+        Toggle("quiet", cur.QuietMode, "quiet mode", api.SetQuietModeAsync);
+        if (changes.Count == 0) return;
+
+        var saved = 0;
+        foreach (var (label, send) in changes)
+        {
+            SetStatus($"Saving {cam.Name} {label}…");
+            try { await send(); saved++; }
+            catch (Exception ex)
+            {
+                SetStatus($"Couldn't save {cam.Name} {label}.", error: true);
+                var kept = saved > 0 ? $"\n\nThe {saved} change{S(saved)} before it were saved." : "";
+                Dialog.Info(this, $"Couldn't save {label}", ex.Message + kept, warning: true);
+                return;
+            }
+        }
+        SetStatus($"{cam.Name} settings saved.");
+    }
+
+    private async Task RestartCameraAsync(Device cam)
+    {
+        if (_state is null) return;
+        if (!Dialog.Confirm(this, $"Restart {cam.Name}?", "It won't record or stream until it comes back online.", "Restart", danger: true)) return;
+        SetStatus($"Restarting {cam.Name}…");
+        try
+        {
+            await CameraSettingsApi.RebootAsync(_state.PanelId, cam.Id);
+            SetStatus($"{cam.Name} is restarting.");
+        }
+        catch (Exception ex)
+        {
+            SetStatus($"Couldn't restart {cam.Name}.", error: true);
+            Dialog.Info(this, $"Couldn't restart {cam.Name}", ex.Message, warning: true);
+        }
     }
 
     // ---------------------------------------------------------------- thermostat comfort targets

@@ -33,7 +33,7 @@ See who's on the system, manage panel and lock PINs, choose which locks each per
 
 **Settings**
 
-Panel info and health, sound and screen brightness, Away Lights, maintenance mode, sensors, weekly insights, two-factor authentication, connected services and the panel photo frame.
+Panel info and health, sound and screen brightness, Away Lights, maintenance mode, sensors, camera settings and restart, weekly insights, two-factor authentication, connected services and the panel photo frame.
 
 **On the desktop**
 
@@ -132,7 +132,6 @@ python tools/gen_csharp.py tools/catalog.json tools/baseurls.json src/VivintDesk
 - Windows only.
 - Vivint's API isn't public, so it can change at any time and break parts of the app.
 - Video search in History sends the query but hasn't returned results on the system it was tested with.
-- Camera settings can't be changed from the app.
-- Some actions haven't been tested against a real system: changing PINs, adding or removing people, invites, deleting clips, maintenance mode, 2FA setup, the photo frame, garage doors, switches and dimmers. Be careful with these on a system you depend on.
+- Some actions haven't been tested against a real system: changing camera settings, restarting a camera, changing PINs, adding or removing people, invites, deleting clips, maintenance mode, 2FA setup, the photo frame, garage doors, switches and dimmers. Be careful with these on a system you depend on.
 
 This app is a convenience and isn't a replacement for your panel or professional monitoring. Don't rely on it for safety-critical alerts.
