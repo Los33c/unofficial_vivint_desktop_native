@@ -1,0 +1,482 @@
+{
+  "a.b": {
+    "base_url": "NRG usage service base (config-provided; no literal in code)",
+    "auth": "other:common-authorization + ciam-authorization + App-Version headers",
+    "confidence": "low",
+    "evidence": "d/x.java:188 builder.baseUrl(str); interceptor adds common-authorization/ciam-authorization; com.nrg.usage.api"
+  },
+  "com.vivint.account.internal.account.network.InvitationService": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "shared Vivint retrofit (account)"
+  },
+  "com.vivint.account.internal.account.network.PlatformUserService": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "shared Vivint retrofit (account)"
+  },
+  "com.vivint.account.internal.contacts.network.VTContactsApi": {
+    "base_url": "https://vivintsky.com/api/ (seed; real host from platformsettings getContactsServiceUrl, called via @Url)",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "VTContactsApiImpl.java baseUrl(str); all methods use @Url"
+  },
+  "com.vivint.data.account.impl.network.PanelUserService": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "shared Vivint retrofit"
+  },
+  "com.vivint.data.account.impl.network.PasswordService": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "shared Vivint retrofit"
+  },
+  "com.vivint.data.camera.cov.remote.service.api.SmartsheetApi": {
+    "base_url": "https://api.smartsheet.com/2.0/",
+    "auth": "other:Smartsheet token via yhw interceptor",
+    "confidence": "high",
+    "evidence": "SmartsheetModule.java baseUrl('https://api.smartsheet.com/2.0/')"
+  },
+  "com.vivint.data.chatid.remote.impl.GetConversationIdApi": {
+    "base_url": "https://apio.vivint.com (prod) / https://apio-dev.vivint.com (nonprod)",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "SalesforceConversationIdRetrofitModule_ProvideConversationIdApiFactory: str=isProd?apio.vivint.com:apio-dev.vivint.com"
+  },
+  "com.vivint.data.climate.setpointtarget.remote.impl.network.api.SetPointTargetNetworkApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "shared Vivint retrofit"
+  },
+  "com.vivint.data.clips.remote.impl.rest.ClipsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "UserModule_ProvidesClipsApiFactory on shared Vivint retrofit"
+  },
+  "com.vivint.data.diagnostic.remote.impl.DiagnosticEngineApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.energy.consent.remote.service.api.EnergyConsentApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "EnergyConsentApiImpl new Retrofit.Builder(retrofit) inherits shared Vivint base"
+  },
+  "com.vivint.data.energy.info.remote.impl.network.api.EnergyInfoApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "EnergyInfoApiNetworkModule_ProvideEnergyInfoApiFactory create() on injected shared retrofit"
+  },
+  "com.vivint.data.fcmtoken.registrar.impl.service.api.MobileDeviceApiV2": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "MobileDeviceApiV2Impl shared Vivint retrofit"
+  },
+  "com.vivint.data.history.remote.impl.HistoryHttpApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.homesummarysettings.impl.network.HomeSummarySettingsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "HomeSummarySettingsApiModule shared Vivint retrofit"
+  },
+  "com.vivint.data.hub.remote.impl.HubOperationsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.insights.remote.network.api.InsightsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.invite.remote.impl.network.api.InviteApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "InviteApiModule shared Vivint retrofit"
+  },
+  "com.vivint.data.keypad.remote.impl.network.api.KeypadSettingsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "KeypadUserModule_Companion_ProvideKeypadSettingsApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.data.moments.remote.network.api.MomentsApi": {
+    "base_url": "https://api.moments.vivint.ai/ (DynamicConfig MOMENTS_API_ENVIRONMENT may override to {env}.api.moments.vivint.ai)",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "MomentsApiModuleKt.access$getMomentBaseUrl default https://api.moments.vivint.ai/"
+  },
+  "com.vivint.data.myq.remote.network.api.MyQApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "MyQApiModule_ProvideMyQSignInApiFactory on shared Vivint retrofit; redirectUri=vivintsky.com/universal-links/myq-oauth-redirect"
+  },
+  "com.vivint.data.occupancy.places.remote.impl.GoogleMapsApi": {
+    "base_url": "https://maps.googleapis.com/maps/api/",
+    "auth": "other:Google Maps API key query param",
+    "confidence": "high",
+    "evidence": "defpackage/rg0.java:41 baseUrl('https://maps.googleapis.com/maps/api/')"
+  },
+  "com.vivint.data.outlet.remote.impl.network.api.OutletSettingsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.panel.remote.service.PanelRestApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "PanelRestApiImpl retrofit.create() on injected shared Vivint retrofit"
+  },
+  "com.vivint.data.photo.remote.impl.PhotoApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "data.photo module shared Vivint retrofit"
+  },
+  "com.vivint.data.photoframe.remote.impl.network.api.PhotoFrameApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "PhotoFrameApiModule shared Vivint retrofit"
+  },
+  "com.vivint.data.preinstall.scheduling.remote.api.VtSchedulingApi": {
+    "base_url": "https://apio.vivint.com (inferred; sales/fulfillment endpoints) - unverified",
+    "auth": "bearer",
+    "confidence": "low",
+    "evidence": "VtSchedulingApi @POST '/sales/v2/fulfillments/appointments/available'; creation site not located"
+  },
+  "com.vivint.data.pubsub.api.ChannelApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "ChannelApiImpl baseUrl(str) injected; @PUT('renew-channel')"
+  },
+  "com.vivint.data.referafriend.remote.api.ReferAFriendApi": {
+    "base_url": "https://apio.vivint.com/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "ReferAFriendModule baseUrl('https://apio.vivint.com/')"
+  },
+  "com.vivint.data.rules.remote.network.api.RulesApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "UserModule_ProvidesRulesApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.data.securitystate.remote.impl.network.api.MaintenanceModeRestApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "MaintenanceModeNetworkModule shared Vivint retrofit"
+  },
+  "com.vivint.data.securitystate.remote.impl.network.api.ManualAlarmRestApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "ManualAlarmNetworkModule shared Vivint retrofit"
+  },
+  "com.vivint.data.sensors.remote.AddSensorApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.sensors.remote.SensorOperationsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.data.shop.remote.ContentManagementApi": {
+    "base_url": "https://www.vivint.com/ (prod CMS; dev=https://experience-dev.vivint.com/)",
+    "auth": "none",
+    "confidence": "high",
+    "evidence": "ContentManagementModule.provideCMSApi -> a(moshi,'https://www.vivint.com/',client)"
+  },
+  "com.vivint.data.shop.remote.StoreApi": {
+    "base_url": "https://vivintsky.com/api/ (seed; real store/CDN hosts from platformsettings vturl/cdnurl via @Url)",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "StoreApiImpl baseUrl(str); getStoreUrl/getStoreCDNUrl platformsettings; methods use @Url"
+  },
+  "com.vivint.data.smartdrive.remote.impl.SmartDriveApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "SmartDriveApiModule.provideSmartDriveApi$impl retrofit.create() on shared Vivint retrofit"
+  },
+  "com.vivint.data.support.remote.impl.network.api.SupportArticleApi": {
+    "base_url": "https://apio.vivint.com/kb/v1/",
+    "auth": "none",
+    "confidence": "high",
+    "evidence": "TextStreamsKt.provideSupportArticleApi baseUrl('https://apio.vivint.com/kb/v1/')"
+  },
+  "com.vivint.data.system.impl.net.SystemRefreshApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "UserModule_ProvideSystemRefreshApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.data.system.impl.net.SystemRestApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "SystemRepositoryModule_ProvideSystemRestApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.data.targetedcamera.remote.impl.network.api.TargetedCameraRestApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "CameraApiNetworkModule_ProvideTargetedCameraRestApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.data.user.remote.impl.network.AuthenticatedUserApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "AuthUserApiModule_ProvidesAuthUserApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.data.videosearch.remote.impl.VideoSearchRemoteFeedbackRetroApi": {
+    "base_url": "https://api.feedback.search.vivint.ai/ (optional {env}. prefix)",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "LazyVideoSearchRemoteFeedbackRetroApi buildVideoSearchUrl('api.feedback.search.vivint.ai',env); VideoSearchAuthorizer sets Authorization"
+  },
+  "com.vivint.data.videosearch.remote.impl.VideoSearchRemoteQueryRetroApi": {
+    "base_url": "https://api.search.vivint.ai/ (optional {env}. prefix)",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "LazyVideoSearchRemoteQueryRetroApi buildVideoSearchUrl('api.search.vivint.ai',env)"
+  },
+  "com.vivint.nrg.sdk.internal.auth.impl.config.OpenIdConfigApi": {
+    "base_url": "AuthConfig.discoveryUri (FusionAuth/OpenID discovery; config-provided, no literal)",
+    "auth": "other:OpenID discovery (unauthenticated)",
+    "confidence": "medium",
+    "evidence": "NrgSdkModule_Companion_ProvideOpenIdConfigApiFactory baseUrl(((AuthConfig)t).getDiscoveryUri())"
+  },
+  "com.vivint.nrg.sdk.internal.auth.impl.token.nrg.NrgTokenApi": {
+    "base_url": "AuthConfig.nrgTokenBaseURL (config-provided, no literal)",
+    "auth": "other:token endpoint",
+    "confidence": "medium",
+    "evidence": "NrgSdkModule_Companion_ProvideNrgTokenApiFactory baseUrl(((AuthConfig)t).getNrgTokenBaseURL())"
+  },
+  "com.vivint.oauth.internal.network.api.RedirectingEitherApi": {
+    "base_url": "https://vivintsky.com/ (OAuthClientBaseUrl=ProvideVivintBaseUrl, no /api/; identity/login/token via @Url)",
+    "auth": "other:OAuth login/token exchange (obtains bearer)",
+    "confidence": "medium",
+    "evidence": "CloudModule_ProvideOAuthClientBaseUrlFactory returns ProvideVivintBaseUrl (M0<-L0); methods use @Url"
+  },
+  "com.vivint.sdkcore.device.net.DeviceApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:22718 Trace.buildRetrofitClient(client,str,factory).create(DeviceApi); str=Vivint base"
+  },
+  "com.vivint.security.hub.setup.controls.HubApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "security hub setup; shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.alarm.net.AlarmApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "AlarmModule.provideAlarmNetworkComponent$mobile(retrofit) retrofit.create(AlarmApi) on shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.garageDoor.GarageDoorApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.locks.network.LockApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.panelUser.PanelUserApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "security.sdk shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.sensors.network.RestSensorApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "SensorModule_ProvideSensorApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.zwave.network.ZwaveApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "security.sdk shared Vivint retrofit"
+  },
+  "com.vivint.security.sdk.features.zwave.network.ZwaveKeypadAPI": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent shared Vivint retrofit"
+  },
+  "com.vivint.smartactions.sdk.net.AwaylightRetrofitApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "ShortcutsUserModule_ProvideAwaylightRetrofitApiFactory baseUrl(str) injected"
+  },
+  "com.vivint.smartactions.sdk.net.ShortcutsRetrofitApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "ShortcutsUserModule_ProvideRoutinesRetrofitApiFactory baseUrl(str) injected"
+  },
+  "com.vivint.smarthome.sdk.net.device.camera.net.CameraAnalyticsEventsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "low",
+    "evidence": "smarthome.sdk camera analytics; base not explicitly located, assumed shared Vivint retrofit"
+  },
+  "com.vivint.smsdk.api.service.DVRService": {
+    "base_url": "SpaceMonkey DVR node base (runtime, resolved via SpaceMonkeyDirectoryService; per-node host)",
+    "auth": "other:SpaceMonkey auth token",
+    "confidence": "low",
+    "evidence": "DVRService built from directory lookup; no static base literal"
+  },
+  "com.vivint.smsdk.api.service.SpaceMonkeyAccountService": {
+    "base_url": "https://accounts.spacemonkey.com",
+    "auth": "other:SpaceMonkey account auth",
+    "confidence": "high",
+    "evidence": "SpaceMonkeyAccounts.java f44388c='https://accounts.spacemonkey.com'"
+  },
+  "com.vivint.smsdk.api.service.SpaceMonkeyDirectoryService": {
+    "base_url": "https://directory.spacemonkey.com",
+    "auth": "other:SpaceMonkey auth",
+    "confidence": "high",
+    "evidence": "SpaceMonkeyDirectory.java:19 buildRetrofitClient(client,'https://directory.spacemonkey.com')"
+  },
+  "com.vivint.ui.account.features.mfa.net.MultiFactorAuthApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "CloudModule_ProvideMultiFactorAuthApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.vivintsdk.VivintSkyService": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer (+cookie jar)",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:18032 create(VivintSkyService); AuthenticatingOkHttpClient has ClearableCookieJar + OAuth Authorization header"
+  },
+  "com.vivint.vivintsdk.camera.CameraThumbnailApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "DaggerApplicationComponent:24197 retrofit.create(CameraThumbnailApi) on injected shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.camera.data.common.converters.thermostat.ThermostatApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "camera.data thermostat; shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.camera.data.remote.CameraApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "camera.data.remote; shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.camera.data.remote.LiveVideoApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:28403 Trace.buildRetrofitClient(client,str,factory).create(LiveVideoApi); str=Vivint base"
+  },
+  "com.vivint.vivintsky.camera.data.remote.SystemApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "camera.data.remote.SystemApi; shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.net.retrofit.GoogleMapsApi": {
+    "base_url": "https://maps.googleapis.com/maps/api/",
+    "auth": "other:Google Maps API key query param",
+    "confidence": "high",
+    "evidence": "GoogleMapsApi.java @GET('geocode/json'),@GET('place/autocomplete/json') relative to maps.googleapis.com/maps/api/"
+  },
+  "com.vivint.vivintsky.net.retrofit.HomeServicesApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:27919 Trace.buildRetrofitClient(client,str,factory).create(HomeServicesApi)"
+  },
+  "com.vivint.vivintsky.net.retrofit.OpenIdApi": {
+    "base_url": "https://id.vivint.com/",
+    "auth": "other:OpenID discovery (unauthenticated)",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:7021 create(OpenIdApi) str2=openIdBaseUrl; PlatformConfig.g=https://id.vivint.com/ ; @GET('/.well-known/openid-configuration')"
+  },
+  "com.vivint.vivintsky.net.retrofit.PhotoApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "CloudModule_ProvidePhotoApiFactory shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.net.retrofit.SecurityApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:18203 Trace.buildRetrofitClient(client,str,factory).create(SecurityApi)"
+  },
+  "com.vivint.vivintsky.net.retrofit.SessionApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer (+cookie jar)",
+    "confidence": "high",
+    "evidence": "DaggerApplicationComponent:7022 Trace.buildRetrofitClient(client,str,factory).create(SessionApi); str=Vivint base"
+  },
+  "com.vivint.vivintsky.net.retrofit.VivintGoogleSignInApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "high",
+    "evidence": "VivintGoogleSignInApi relative paths 'systems/{id}/sdm_nest_mapping','google-sdm-oauth-builder/{id}' -> Vivint /api/"
+  },
+  "com.vivint.vivintsky.net.retrofit.WifiApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "net.retrofit.WifiApi shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.signedinuser.UserSettingsApi": {
+    "base_url": "https://vivintsky.com/api/",
+    "auth": "bearer",
+    "confidence": "medium",
+    "evidence": "UserSettingsModule shared Vivint retrofit"
+  },
+  "com.vivint.vivintsky.vivintmetrics.AnalyticsService": {
+    "base_url": "https://telegraf.metrics.vivint.ai",
+    "auth": "other:metrics (Telegraf/InfluxDB)",
+    "confidence": "high",
+    "evidence": "AnalyticsServiceModule_ProvideAnalyticsServiceFactory baseUrl('https://telegraf.metrics.vivint.ai')"
+  }
+}

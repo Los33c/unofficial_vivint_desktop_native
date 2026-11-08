@@ -1,0 +1,7038 @@
+[
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "POST",
+  "path": "v1/account/dis-agg-billCycle-usage/{businessPartnerNumber}/{contractAccountNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "BillCycleUsageRequest.Body",
+    "type_fqcn": "a.BillCycleUsageRequest.Body"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "POST",
+  "path": "tealium/v1/{businessPartnerNumber}/{contractAccountNumber}/save-home-profile-micro-survey",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "DisaggSurveyRequest.Body",
+    "type_fqcn": "a.DisaggSurveyRequest.Body"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "GET",
+  "path": "v1/bill/energy-insights",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractId",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "esiId",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "companyCode",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "brandName",
+    "var": "str6",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "currentBillStartDate",
+    "var": "str7",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "currentBillEndDate",
+    "var": "str8",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "GET",
+  "path": "v1/history-service/bill-cycle-dates",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "companyCode",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "brandName",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractId",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "noOfMonths",
+    "var": "str6",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "GET",
+  "path": "v1/usage/weekly/{businessPartnerNumber}/{contractAccountNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractId",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "esiId",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "yearWeekNumber",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "GET",
+  "path": "v1/bill/projected-bill",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "companyCode",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "brandName",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "GET",
+  "path": "v1/account/oneapp-profile",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "CompanyCode",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "brandName",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "a",
+  "http_method": "POST",
+  "path": "v1/auth",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "Body",
+    "type_fqcn": "retrofit2.http.Body"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "b",
+  "http_method": "GET",
+  "path": "v1/usage/daily/{businessPartnerNumber}/{contractAccountNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractId",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "esiId",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "actualDay",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "c",
+  "http_method": "GET",
+  "path": "v1/usage/monthly/{businessPartnerNumber}/{contractAccountNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractId",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "esiId",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "actualDay",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "b",
+  "package": "a",
+  "file": "a/b.java",
+  "function": "d",
+  "http_method": "GET",
+  "path": "v1/usage/yearly/{businessPartnerNumber}/{contractAccountNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "businessPartnerNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "contractAccountNumber",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "contractId",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "esiId",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "year",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "InvitationService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/InvitationService.java",
+  "function": "acceptInvitation",
+  "http_method": "POST",
+  "path": "link-users",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "InvitationService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/InvitationService.java",
+  "function": "declineInvitation",
+  "http_method": "DELETE",
+  "path": "invite-passcode/{code}",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "code",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "deleteShsUser",
+  "http_method": "DELETE",
+  "path": "systems/{systemId}/shsUsers/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "deleteSystem",
+  "http_method": "DELETE",
+  "path": "link-users",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "getUserAccessHistory",
+  "http_method": "GET",
+  "path": "/api/mobile-device",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "login",
+  "http_method": "POST",
+  "path": "/api/login",
+  "has_body": false,
+  "headers": [
+   "Content-Type: application/json",
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "loginRequest",
+    "var": "loginRequest",
+    "type": "LoginRequest",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.LoginRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "logout",
+  "http_method": "POST",
+  "path": "/api/logout",
+  "has_body": false,
+  "headers": [
+   "Content-Type: application/json",
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "logoutRequest",
+    "var": "logoutRequest",
+    "type": "LogoutRequest",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.LogoutRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "sendInvitation",
+  "http_method": "POST",
+  "path": "invite-passcode",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "sendInvitationRequest",
+    "var": "sendInvitationRequest",
+    "type": "SendInvitationRequest",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.SendInvitationRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "sendPasswordReset",
+  "http_method": "POST",
+  "path": "/api/platform-users/send-password-reset",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "passwordResetRequestDto",
+    "var": "passwordResetRequestDto",
+    "type": "PasswordResetRequestDto",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.PasswordResetRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "sendShsInvitation",
+  "http_method": "POST",
+  "path": "invite-passcode",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "sendShsInvitationRequest",
+    "var": "sendShsInvitationRequest",
+    "type": "SendShsInvitationRequest",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.SendShsInvitationRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "updateUserAccess",
+  "http_method": "PUT",
+  "path": "/mobile-access/v1/system/{systemId}/device/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "updateUserAccessRequest",
+    "var": "updateUserAccessRequest",
+    "type": "UpdateUserAccessRequest",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.UpdateUserAccessRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PlatformUserService",
+  "package": "com.vivint.account.internal.account.network",
+  "file": "com/vivint/account/internal/account/network/PlatformUserService.java",
+  "function": "updateUserProperty",
+  "http_method": "PUT",
+  "path": "/platform-user-api/v0/platformusers/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "userPropertiesUpdateRequest",
+    "var": "userPropertiesUpdateRequest",
+    "type": "UserPropertiesUpdateRequest",
+    "type_fqcn": "com.vivint.account.internal.account.network.model.platform.UserPropertiesUpdateRequest"
+   }
+  ]
+ },
+ {
+  "interface": "VTContactsApi",
+  "package": "com.vivint.account.internal.contacts.network",
+  "file": "com/vivint/account/internal/contacts/network/VTContactsApi.java",
+  "function": "deleteEmergencyContact",
+  "http_method": "DELETE",
+  "path": "",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Url",
+    "name": "url",
+    "var": "url",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "contactIds",
+    "var": "contactIds",
+    "type": "List<String>",
+    "type_fqcn": "java.util.List"
+   }
+  ]
+ },
+ {
+  "interface": "VTContactsApi",
+  "package": "com.vivint.account.internal.contacts.network",
+  "file": "com/vivint/account/internal/contacts/network/VTContactsApi.java",
+  "function": "getContactsServiceUrl",
+  "http_method": "GET",
+  "path": "platform-settings-api/v1/platformsettings/vtcontactsserviceurl",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<PlatformSettingResponse>>",
+  "params": []
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "addLockAccess",
+  "http_method": "POST",
+  "path": "/panel-user-api/v1/systems/{systemId}/users/{userId}:add-lock",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "updateLockAccessRequest",
+    "var": "updateLockAccessRequest",
+    "type": "UpdateLockAccessRequest",
+    "type_fqcn": "com.vivint.data.account.impl.network.model.panel.UpdateLockAccessRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "createPanelUser",
+  "http_method": "POST",
+  "path": "/panel-user-api/v1/systems/{systemId}/users",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "createPanelUserApiRequest",
+    "var": "createPanelUserApiRequest",
+    "type": "CreatePanelUserApiRequest",
+    "type_fqcn": "com.vivint.data.account.impl.network.model.panel.CreatePanelUserApiRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "deletePanelUser",
+  "http_method": "DELETE",
+  "path": "/panel-user-api/v1/systems/{systemId}/users/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "putSystemUserValue",
+  "http_method": "PUT",
+  "path": "systems/{systemId}/users/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "map",
+    "var": "map",
+    "type": "Map<String, Object>",
+    "type_fqcn": "java.util.Map"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "removeLockAccess",
+  "http_method": "POST",
+  "path": "/panel-user-api/v1/systems/{systemId}/users/{userId}:remove-lock",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "updateLockAccessRequest",
+    "var": "updateLockAccessRequest",
+    "type": "UpdateLockAccessRequest",
+    "type_fqcn": "com.vivint.data.account.impl.network.model.panel.UpdateLockAccessRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "updateUserLockPin",
+  "http_method": "PUT",
+  "path": "/panel-user-api/v1/systems/{systemId}/users/{userId}/lock-code",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "setLockPinRequest",
+    "var": "setLockPinRequest",
+    "type": "SetLockPinRequest",
+    "type_fqcn": "com.vivint.data.account.impl.network.model.panel.SetLockPinRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PanelUserService.java",
+  "function": "updateUserPanelPin",
+  "http_method": "PUT",
+  "path": "/panel-user-api/v1/systems/{systemId}/users/{userId}/code",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "setPanelPinRequest",
+    "var": "setPanelPinRequest",
+    "type": "SetPanelPinRequest",
+    "type_fqcn": "com.vivint.data.account.impl.network.model.panel.SetPanelPinRequest"
+   }
+  ]
+ },
+ {
+  "interface": "PasswordService",
+  "package": "com.vivint.data.account.impl.network",
+  "file": "com/vivint/data/account/impl/network/PasswordService.java",
+  "function": "getPasswordRules",
+  "http_method": "GET",
+  "path": "/platform-user-api/v0/platformusers/password/regex",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "SmartsheetApi",
+  "package": "com.vivint.data.camera.cov.remote.service.api",
+  "file": "com/vivint/data/camera/cov/remote/service/api/SmartsheetApi.java",
+  "function": "addRowsToSheet",
+  "http_method": "POST",
+  "path": "sheets/{sheetId}/rows",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "sheetId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "smartsheetRowUpdate",
+    "var": "smartsheetRowUpdate",
+    "type": "SmartsheetRowUpdate",
+    "type_fqcn": "com.vivint.vivintsky.caughtonvivint.models.SmartsheetRowUpdate"
+   }
+  ]
+ },
+ {
+  "interface": "SmartsheetApi",
+  "package": "com.vivint.data.camera.cov.remote.service.api",
+  "file": "com/vivint/data/camera/cov/remote/service/api/SmartsheetApi.java",
+  "function": "getSheet",
+  "http_method": "GET",
+  "path": "sheets/{sheetId}?include=columns",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "sheetId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SmartsheetApi",
+  "package": "com.vivint.data.camera.cov.remote.service.api",
+  "file": "com/vivint/data/camera/cov/remote/service/api/SmartsheetApi.java",
+  "function": "uploadVideoAttachment",
+  "http_method": "POST",
+  "path": "sheets/{sheetId}/rows/{rowId}/attachments",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": true,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "sheetId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "rowId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Part",
+    "name": "part",
+    "var": "part",
+    "type": "MultipartBody.Part",
+    "type_fqcn": "com.vivint.data.camera.cov.remote.service.api.MultipartBody.Part"
+   }
+  ]
+ },
+ {
+  "interface": "GetConversationIdApi",
+  "package": "com.vivint.data.chatid.remote.impl",
+  "file": "com/vivint/data/chatid/remote/impl/GetConversationIdApi.java",
+  "function": "getConversationId",
+  "http_method": "POST",
+  "path": "salesforce/v1/ConversationIdManager",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "recordContextId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SetPointTargetNetworkApi",
+  "package": "com.vivint.data.climate.setpointtarget.remote.impl.network.api",
+  "file": "com/vivint/data/climate/setpointtarget/remote/impl/network/api/SetPointTargetNetworkApi.java",
+  "function": "putSmartComfortTargets",
+  "http_method": "PUT",
+  "path": "{systemId}/1/thermostats/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "thermostatSetPointTargetRequest",
+    "var": "thermostatSetPointTargetRequest",
+    "type": "ThermostatSetPointTargetRequest",
+    "type_fqcn": "com.vivint.data.climate.setpointtarget.remote.impl.model.ThermostatSetPointTargetRequest"
+   }
+  ]
+ },
+ {
+  "interface": "ClipsApi",
+  "package": "com.vivint.data.clips.remote.impl.rest",
+  "file": "com/vivint/data/clips/remote/impl/rest/ClipsApi.java",
+  "function": "deleteClips",
+  "http_method": "PATCH",
+  "path": "{systemId}/clip-batch-delete",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "deleteClipsRequest",
+    "var": "deleteClipsRequest",
+    "type": "DeleteClipsRequest",
+    "type_fqcn": "com.vivint.data.clips.remote.impl.rest.DeleteClipsRequest"
+   }
+  ]
+ },
+ {
+  "interface": "ClipsApi",
+  "package": "com.vivint.data.clips.remote.impl.rest",
+  "file": "com/vivint/data/clips/remote/impl/rest/ClipsApi.java",
+  "function": "getClipUrl",
+  "http_method": "GET",
+  "path": "token/{clipId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "clipId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ClipsApi",
+  "package": "com.vivint.data.clips.remote.impl.rest",
+  "file": "com/vivint/data/clips/remote/impl/rest/ClipsApi.java",
+  "function": "getClips",
+  "http_method": "GET",
+  "path": "{panelId}/0/history/{cameraId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "cameraId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "be",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "lim",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Query",
+    "name": "t",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ClipsApi",
+  "package": "com.vivint.data.clips.remote.impl.rest",
+  "file": "com/vivint/data/clips/remote/impl/rest/ClipsApi.java",
+  "function": "getEventsBetweenTimes",
+  "http_method": "GET",
+  "path": "{panelId}/0/history/{cameraId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "cameraId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "stad",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "stod",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "lim",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Query",
+    "name": "t",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "collapse",
+    "var": "i2",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "DiagnosticEngineApi",
+  "package": "com.vivint.data.diagnostic.remote.impl",
+  "file": "com/vivint/data/diagnostic/remote/impl/DiagnosticEngineApi.java",
+  "function": "getHomeSystemHealthIssues",
+  "http_method": "GET",
+  "path": "/diagnostics-engine-public/systems/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "visibility_level",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "EnergyConsentApi",
+  "package": "com.vivint.data.energy.consent.remote.service.api",
+  "file": "com/vivint/data/energy/consent/remote/service/api/EnergyConsentApi.java",
+  "function": "getEnergyConsent",
+  "http_method": "GET",
+  "path": "/energy/v1/oauth/{system_id}/consent",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "EnergyConsentApi",
+  "package": "com.vivint.data.energy.consent.remote.service.api",
+  "file": "com/vivint/data/energy/consent/remote/service/api/EnergyConsentApi.java",
+  "function": "setEnergyConsent",
+  "http_method": "POST",
+  "path": "/energy/v1/oauth/{system_id}/consent",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "energyConsentRequest",
+    "var": "energyConsentRequest",
+    "type": "EnergyConsentRequest",
+    "type_fqcn": "com.vivint.data.energy.consent.remote.service.api.model.EnergyConsentRequest"
+   }
+  ]
+ },
+ {
+  "interface": "EnergyInfoApi",
+  "package": "com.vivint.data.energy.info.remote.impl.network.api",
+  "file": "com/vivint/data/energy/info/remote/impl/network/api/EnergyInfoApi.java",
+  "function": "disconnect",
+  "http_method": "DELETE",
+  "path": "/energy/v1/oauth/{system_id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "EnergyInfoApi",
+  "package": "com.vivint.data.energy.info.remote.impl.network.api",
+  "file": "com/vivint/data/energy/info/remote/impl/network/api/EnergyInfoApi.java",
+  "function": "getEnergyInfo",
+  "http_method": "GET",
+  "path": "/energy/v1/oauth/{system_id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "EnergyInfoApi",
+  "package": "com.vivint.data.energy.info.remote.impl.network.api",
+  "file": "com/vivint/data/energy/info/remote/impl/network/api/EnergyInfoApi.java",
+  "function": "setEnergyInfo",
+  "http_method": "PUT",
+  "path": "/energy/v1/oauth/{system_id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "energyInfoRequest",
+    "var": "energyInfoRequest",
+    "type": "EnergyInfoRequest",
+    "type_fqcn": "com.vivint.data.energy.info.remote.impl.network.api.model.EnergyInfoRequest"
+   }
+  ]
+ },
+ {
+  "interface": "MobileDeviceApiV2",
+  "package": "com.vivint.data.fcmtoken.registrar.impl.service.api",
+  "file": "com/vivint/data/fcmtoken/registrar/impl/service/api/MobileDeviceApiV2.java",
+  "function": "clearPushTokenRegistration",
+  "http_method": "POST",
+  "path": "/mobile-device-api/v2/mobiledevices/{id}/clearpushtoken",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MobileDeviceApiV2",
+  "package": "com.vivint.data.fcmtoken.registrar.impl.service.api",
+  "file": "com/vivint/data/fcmtoken/registrar/impl/service/api/MobileDeviceApiV2.java",
+  "function": "createMobileDeviceRegistration",
+  "http_method": "POST",
+  "path": "/mobile-device-api/v2/mobiledevices",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "createOrUpdateMobileDeviceRequest",
+    "var": "createOrUpdateMobileDeviceRequest",
+    "type": "CreateOrUpdateMobileDeviceRequest",
+    "type_fqcn": "com.vivint.data.fcmtoken.registrar.impl.service.api.CreateOrUpdateMobileDeviceRequest"
+   }
+  ]
+ },
+ {
+  "interface": "MobileDeviceApiV2",
+  "package": "com.vivint.data.fcmtoken.registrar.impl.service.api",
+  "file": "com/vivint/data/fcmtoken/registrar/impl/service/api/MobileDeviceApiV2.java",
+  "function": "getMobileDeviceRegistration",
+  "http_method": "GET",
+  "path": "/mobile-device-api/v2/mobiledevices/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MobileDeviceApiV2",
+  "package": "com.vivint.data.fcmtoken.registrar.impl.service.api",
+  "file": "com/vivint/data/fcmtoken/registrar/impl/service/api/MobileDeviceApiV2.java",
+  "function": "searchMobileDevicesTokens",
+  "http_method": "GET",
+  "path": "/mobile-device-api/v2/mobiledevices/search",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "mobile_device_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "push_token",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MobileDeviceApiV2",
+  "package": "com.vivint.data.fcmtoken.registrar.impl.service.api",
+  "file": "com/vivint/data/fcmtoken/registrar/impl/service/api/MobileDeviceApiV2.java",
+  "function": "searchMobileDevicesTokensNew",
+  "http_method": "POST",
+  "path": "/mobile-device-api/v2/mobiledevices:search",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "mobile_device_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "push_token",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MobileDeviceApiV2",
+  "package": "com.vivint.data.fcmtoken.registrar.impl.service.api",
+  "file": "com/vivint/data/fcmtoken/registrar/impl/service/api/MobileDeviceApiV2.java",
+  "function": "updateMobileDeviceRegistration",
+  "http_method": "PUT",
+  "path": "/mobile-device-api/v2/mobiledevices/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "createOrUpdateMobileDeviceRequest",
+    "var": "createOrUpdateMobileDeviceRequest",
+    "type": "CreateOrUpdateMobileDeviceRequest",
+    "type_fqcn": "com.vivint.data.fcmtoken.registrar.impl.service.api.CreateOrUpdateMobileDeviceRequest"
+   }
+  ]
+ },
+ {
+  "interface": "HistoryHttpApi",
+  "package": "com.vivint.data.history.remote.impl",
+  "file": "com/vivint/data/history/remote/impl/HistoryHttpApi.java",
+  "function": "deleteClips",
+  "http_method": "PATCH",
+  "path": "{systemId}/clip-batch-delete",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "deleteClipsRequest",
+    "var": "deleteClipsRequest",
+    "type": "DeleteClipsRequest",
+    "type_fqcn": "com.vivint.data.history.remote.impl.DeleteClipsRequest"
+   }
+  ]
+ },
+ {
+  "interface": "HistoryHttpApi",
+  "package": "com.vivint.data.history.remote.impl",
+  "file": "com/vivint/data/history/remote/impl/HistoryHttpApi.java",
+  "function": "getActivityFeedOverview",
+  "http_method": "GET",
+  "path": "/history-api/v2/systems/{systemId}/history/activity-feed-overview",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Header",
+    "name": "Accept-Language",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "map",
+    "var": "map",
+    "type": "Map<String, String>",
+    "type_fqcn": "java.util.Map"
+   }
+  ]
+ },
+ {
+  "interface": "HistoryHttpApi",
+  "package": "com.vivint.data.history.remote.impl",
+  "file": "com/vivint/data/history/remote/impl/HistoryHttpApi.java",
+  "function": "getFilterPills",
+  "http_method": "GET",
+  "path": "/history-api/v2/systems/{systemId}/history/filter-categories",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "HistoryHttpApi",
+  "package": "com.vivint.data.history.remote.impl",
+  "file": "com/vivint/data/history/remote/impl/HistoryHttpApi.java",
+  "function": "getHistory",
+  "http_method": "GET",
+  "path": "{systemId}/1/history{filterList}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "filterList",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "lim",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Query",
+    "name": "be",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "t",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "collapse",
+    "var": "bool",
+    "type": "Boolean",
+    "type_fqcn": "Boolean"
+   },
+   {
+    "kind": "Query",
+    "name": "included_filter_categories",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "excluded_filter_categories",
+    "var": "str6",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "fetchPinnedAlarm",
+    "var": "bool2",
+    "type": "Boolean",
+    "type_fqcn": "Boolean"
+   },
+   {
+    "kind": "Query",
+    "name": "collapse_clips",
+    "var": "bool3",
+    "type": "Boolean",
+    "type_fqcn": "Boolean"
+   }
+  ]
+ },
+ {
+  "interface": "HomeSummarySettingsApi",
+  "package": "com.vivint.data.homesummarysettings.impl.network",
+  "file": "com/vivint/data/homesummarysettings/impl/network/HomeSummarySettingsApi.java",
+  "function": "updateWidgetEnabled",
+  "http_method": "PUT",
+  "path": "mobile-devices/{deviceId}/settings",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "widgetSettingsRequest",
+    "var": "widgetSettingsRequest",
+    "type": "WidgetSettingsRequest",
+    "type_fqcn": "com.vivint.data.homesummarysettings.impl.network.model.WidgetSettingsRequest"
+   }
+  ]
+ },
+ {
+  "interface": "HubOperationsApi",
+  "package": "com.vivint.data.hub.remote.impl",
+  "file": "com/vivint/data/hub/remote/impl/HubOperationsApi.java",
+  "function": "updateHubSetting",
+  "http_method": "PATCH",
+  "path": "/panel-api/v1/systems/{systemId}/settings",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "hubSettingsDto",
+    "var": "hubSettingsDto",
+    "type": "HubSettingsDto",
+    "type_fqcn": "com.vivint.data.hub.remote.impl.model.HubSettingsDto"
+   }
+  ]
+ },
+ {
+  "interface": "InsightsApi",
+  "package": "com.vivint.data.insights.remote.network.api",
+  "file": "com/vivint/data/insights/remote/network/api/InsightsApi.java",
+  "function": "getInsights",
+  "http_method": "GET",
+  "path": "/insights/v1/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "InviteApi",
+  "package": "com.vivint.data.invite.remote.impl.network.api",
+  "file": "com/vivint/data/invite/remote/impl/network/api/InviteApi.java",
+  "function": "acceptInvite",
+  "http_method": "POST",
+  "path": "link-users",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "acceptInviteRequest",
+    "var": "acceptInviteRequest",
+    "type": "AcceptInviteRequest",
+    "type_fqcn": "com.vivint.data.invite.remote.impl.network.api.AcceptInviteRequest"
+   }
+  ]
+ },
+ {
+  "interface": "InviteApi",
+  "package": "com.vivint.data.invite.remote.impl.network.api",
+  "file": "com/vivint/data/invite/remote/impl/network/api/InviteApi.java",
+  "function": "declineInvite",
+  "http_method": "DELETE",
+  "path": "invite-passcode/{code}",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "code",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "declineInviteRequest",
+    "var": "declineInviteRequest",
+    "type": "DeclineInviteRequest",
+    "type_fqcn": "com.vivint.data.invite.remote.impl.network.api.DeclineInviteRequest"
+   }
+  ]
+ },
+ {
+  "interface": "KeypadSettingsApi",
+  "package": "com.vivint.data.keypad.remote.impl.network.api",
+  "file": "com/vivint/data/keypad/remote/impl/network/api/KeypadSettingsApi.java",
+  "function": "putKeypadSetting",
+  "http_method": "PUT",
+  "path": "device-api/v1/systems/{systemId}/devices/{deviceId}/capabilities/{settingPath}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Path",
+    "name": "settingPath",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "zwaveKeypadRequestDto",
+    "var": "zwaveKeypadRequestDto",
+    "type": "ZwaveKeypadRequestDto",
+    "type_fqcn": "com.vivint.data.keypad.remote.impl.network.dto.ZwaveKeypadRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "MomentsApi",
+  "package": "com.vivint.data.moments.remote.network.api",
+  "file": "com/vivint/data/moments/remote/network/api/MomentsApi.java",
+  "function": "postForFeed",
+  "http_method": "POST",
+  "path": "/feed",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "momentsFeedRequest",
+    "var": "momentsFeedRequest",
+    "type": "MomentsFeedRequest",
+    "type_fqcn": "com.vivint.data.moments.remote.network.api.dto.MomentsFeedRequest"
+   }
+  ]
+ },
+ {
+  "interface": "MomentsApi",
+  "package": "com.vivint.data.moments.remote.network.api",
+  "file": "com/vivint/data/moments/remote/network/api/MomentsApi.java",
+  "function": "postForReel",
+  "http_method": "POST",
+  "path": "/reel",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "momentsReelRequest",
+    "var": "momentsReelRequest",
+    "type": "MomentsReelRequest",
+    "type_fqcn": "com.vivint.data.moments.remote.network.api.dto.MomentsReelRequest"
+   }
+  ]
+ },
+ {
+  "interface": "MomentsApi",
+  "package": "com.vivint.data.moments.remote.network.api",
+  "file": "com/vivint/data/moments/remote/network/api/MomentsApi.java",
+  "function": "postInteractions",
+  "http_method": "POST",
+  "path": "/interactions",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "momentsInteractionRequest",
+    "var": "momentsInteractionRequest",
+    "type": "MomentsInteractionRequest",
+    "type_fqcn": "com.vivint.data.moments.remote.network.api.dto.MomentsInteractionRequest"
+   }
+  ]
+ },
+ {
+  "interface": "MyQApi",
+  "package": "com.vivint.data.myq.remote.network.api",
+  "file": "com/vivint/data/myq/remote/network/api/MyQApi.java",
+  "function": "checkSalesforceMyQ",
+  "http_method": "GET",
+  "path": "/api/systems/{systemId}/works-with-vivint/MYQ",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MyQApi",
+  "package": "com.vivint.data.myq.remote.network.api",
+  "file": "com/vivint/data/myq/remote/network/api/MyQApi.java",
+  "function": "deauthorize",
+  "http_method": "DELETE",
+  "path": "/api/myq/oauth/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MyQApi",
+  "package": "com.vivint.data.myq.remote.network.api",
+  "file": "com/vivint/data/myq/remote/network/api/MyQApi.java",
+  "function": "getAuthInfoUsingDefaultBrowser",
+  "http_method": "GET",
+  "path": "/api/myq/oauth/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "browser",
+    "var": "z",
+    "type": "boolean",
+    "type_fqcn": "boolean"
+   }
+  ]
+ },
+ {
+  "interface": "MyQApi",
+  "package": "com.vivint.data.myq.remote.network.api",
+  "file": "com/vivint/data/myq/remote/network/api/MyQApi.java",
+  "function": "sendAuth",
+  "http_method": "POST",
+  "path": "/api/myq/oauth/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "myQAuthResponse",
+    "var": "myQAuthResponse",
+    "type": "MyQAuthResponse",
+    "type_fqcn": "com.vivint.data.myq.remote.network.api.MyQAuthResponse"
+   }
+  ]
+ },
+ {
+  "interface": "MyQApi",
+  "package": "com.vivint.data.myq.remote.network.api",
+  "file": "com/vivint/data/myq/remote/network/api/MyQApi.java",
+  "function": "updateDevices",
+  "http_method": "POST",
+  "path": "/api/myq/sync-all-doors/{systemID}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemID",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "GoogleMapsApi",
+  "package": "com.vivint.data.occupancy.places.remote.impl",
+  "file": "com/vivint/data/occupancy/places/remote/impl/GoogleMapsApi.java",
+  "function": "getAddress",
+  "http_method": "GET",
+  "path": "geocode/json",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "address",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "sensor",
+    "var": "z",
+    "type": "boolean",
+    "type_fqcn": "boolean"
+   },
+   {
+    "kind": "Query",
+    "name": "key",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "GoogleMapsApi",
+  "package": "com.vivint.data.occupancy.places.remote.impl",
+  "file": "com/vivint/data/occupancy/places/remote/impl/GoogleMapsApi.java",
+  "function": "getAutocompleteSuggestions",
+  "http_method": "GET",
+  "path": "place/autocomplete/json",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "input",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "types",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "components",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "sessiontoken",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "key",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "GoogleMapsApi",
+  "package": "com.vivint.data.occupancy.places.remote.impl",
+  "file": "com/vivint/data/occupancy/places/remote/impl/GoogleMapsApi.java",
+  "function": "getPlaceDetails",
+  "http_method": "GET",
+  "path": "place/details/json",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "place_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "fields",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "sessiontoken",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "key",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "OutletSettingsApi",
+  "package": "com.vivint.data.outlet.remote.impl.network.api",
+  "file": "com/vivint/data/outlet/remote/impl/network/api/OutletSettingsApi.java",
+  "function": "putOutletSetting",
+  "http_method": "PUT",
+  "path": "device-api/v1/systems/{systemId}/devices/{deviceId}/capabilities/{settingPath}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Path",
+    "name": "settingPath",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "outletRequestDto",
+    "var": "outletRequestDto",
+    "type": "OutletRequestDto",
+    "type_fqcn": "com.vivint.data.outlet.remote.impl.network.dto.OutletRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "connectPanelToAp",
+  "http_method": "POST",
+  "path": "panel/{systemId}/wifi",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "ConnectPanelToApRequestDto",
+    "type_fqcn": "com.vivint.data.panel.remote.service.ConnectPanelToApRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "getPanelCredentials",
+  "http_method": "GET",
+  "path": "panel-login/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "getPanelUpdateData",
+  "http_method": "GET",
+  "path": "systems/{systemId}/system-update",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<PanelUpdateResponseDto>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "getPanelWifiApList",
+  "http_method": "GET",
+  "path": "panel/{systemId}/ssid-list",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<PanelAccessPointListResponseDto>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "postUpdatePanel",
+  "http_method": "POST",
+  "path": "systems/{systemId}/system-update",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "rebootPanel",
+  "http_method": "POST",
+  "path": "systems/{systemId}/reboot-panel",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "refreshPanelWifiApList",
+  "http_method": "POST",
+  "path": "panel/{systemId}/ssid-list",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PanelRestApi",
+  "package": "com.vivint.data.panel.remote.service",
+  "file": "com/vivint/data/panel/remote/service/PanelRestApi.java",
+  "function": "updatePanelSetting",
+  "http_method": "PATCH",
+  "path": "/panel-api/v1/systems/{systemId}/settings",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "VolumeLevelDto",
+    "type_fqcn": "com.vivint.data.panel.remote.service.VolumeLevelDto"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoApi",
+  "package": "com.vivint.data.photo.remote.impl",
+  "file": "com/vivint/data/photo/remote/impl/PhotoApi.java",
+  "function": "getAllPhotosMeta",
+  "http_method": "GET",
+  "path": "/api/photo",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "PhotoApi",
+  "package": "com.vivint.data.photo.remote.impl",
+  "file": "com/vivint/data/photo/remote/impl/PhotoApi.java",
+  "function": "postPhoto",
+  "http_method": "POST",
+  "path": "/api/photo",
+  "has_body": false,
+  "headers": [
+   "Connection: Keep-Alive",
+   "Cache-Control: no-cache"
+  ],
+  "form": false,
+  "multipart": true,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Part",
+    "name": "aoi",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Part",
+    "name": "aot",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Part",
+    "name": "tod",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Part",
+    "name": "part",
+    "var": "part",
+    "type": "MultipartBody.Part",
+    "type_fqcn": "com.vivint.data.photo.remote.impl.MultipartBody.Part"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "createPhoto",
+  "http_method": "POST",
+  "path": "/photoframe/v0/{serviceNumber}/album/{albumId}/photo",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "albumId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "createPhotoRequestDto",
+    "var": "createPhotoRequestDto",
+    "type": "CreatePhotoRequestDto",
+    "type_fqcn": "com.vivint.data.photoframe.remote.impl.network.api.model.CreatePhotoRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "deletePhoto",
+  "http_method": "DELETE",
+  "path": "/photoframe/v0/{serviceNumber}/album/{albumId}/photo/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "albumId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "deletePhotoFrame",
+  "http_method": "DELETE",
+  "path": "/photoframe/v0/{serviceNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "enablePhotoFrame",
+  "http_method": "POST",
+  "path": "/photoframe/v0/{serviceNumber}/enable",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "getPhotoFrame",
+  "http_method": "GET",
+  "path": "/photoframe/v0/{serviceNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "listPhotos",
+  "http_method": "GET",
+  "path": "/photoframe/v0/{serviceNumber}/album/{albumId}/photos",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "albumId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "publishToPanel",
+  "http_method": "POST",
+  "path": "/photoframe/v0/{serviceNumber}/publish",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "publishToPanelRequestDto",
+    "var": "publishToPanelRequestDto",
+    "type": "PublishToPanelRequestDto",
+    "type_fqcn": "com.vivint.data.photoframe.remote.impl.network.api.model.PublishToPanelRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "PhotoFrameApi",
+  "package": "com.vivint.data.photoframe.remote.impl.network.api",
+  "file": "com/vivint/data/photoframe/remote/impl/network/api/PhotoFrameApi.java",
+  "function": "updatePhotoFrame",
+  "http_method": "PUT",
+  "path": "/photoframe/v0/{serviceNumber}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "serviceNumber",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "updatePhotoFrameRequestDto",
+    "var": "updatePhotoFrameRequestDto",
+    "type": "UpdatePhotoFrameRequestDto",
+    "type_fqcn": "com.vivint.data.photoframe.remote.impl.network.api.model.UpdatePhotoFrameRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "VtSchedulingApi",
+  "package": "com.vivint.data.preinstall.scheduling.remote.api",
+  "file": "com/vivint/data/preinstall/scheduling/remote/api/VtSchedulingApi.java",
+  "function": "getAvailableWindows",
+  "http_method": "POST",
+  "path": "/sales/v2/fulfillments/appointments/available",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "availableWindowsRequestDto",
+    "var": "availableWindowsRequestDto",
+    "type": "AvailableWindowsRequestDto",
+    "type_fqcn": "com.vivint.data.preinstall.scheduling.remote.api.dto.AvailableWindowsRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "VtSchedulingApi",
+  "package": "com.vivint.data.preinstall.scheduling.remote.api",
+  "file": "com/vivint/data/preinstall/scheduling/remote/api/VtSchedulingApi.java",
+  "function": "selectAppointment",
+  "http_method": "POST",
+  "path": "/sales/v1/fulfillments/appointments/select",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "selectAppointmentRequestDto",
+    "var": "selectAppointmentRequestDto",
+    "type": "SelectAppointmentRequestDto",
+    "type_fqcn": "com.vivint.data.preinstall.scheduling.remote.api.dto.SelectAppointmentRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "ChannelApi",
+  "package": "com.vivint.data.pubsub.api",
+  "file": "com/vivint/data/pubsub/api/ChannelApi.java",
+  "function": "renewChannel",
+  "http_method": "PUT",
+  "path": "renew-channel",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "ReferAFriendApi",
+  "package": "com.vivint.data.referafriend.remote.api",
+  "file": "com/vivint/data/referafriend/remote/api/ReferAFriendApi.java",
+  "function": "getReferralCode",
+  "http_method": "POST",
+  "path": "Commerce/v1/ReferralCodes/Generate",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "getReferralCodeApiRequest",
+    "var": "getReferralCodeApiRequest",
+    "type": "GetReferralCodeApiRequest",
+    "type_fqcn": "com.vivint.data.referafriend.remote.api.model.GetReferralCodeApiRequest"
+   }
+  ]
+ },
+ {
+  "interface": "RulesApi",
+  "package": "com.vivint.data.rules.remote.network.api",
+  "file": "com/vivint/data/rules/remote/network/api/RulesApi.java",
+  "function": "createRule",
+  "http_method": "POST",
+  "path": "systems/{systemId}/cloudrules",
+  "has_body": false,
+  "headers": [
+   "connection: close"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "createRuleRequestBody",
+    "var": "createRuleRequestBody",
+    "type": "CreateRuleRequestBody",
+    "type_fqcn": "com.vivint.data.rules.remote.network.api.CreateRuleRequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "RulesApi",
+  "package": "com.vivint.data.rules.remote.network.api",
+  "file": "com/vivint/data/rules/remote/network/api/RulesApi.java",
+  "function": "deleteRule",
+  "http_method": "DELETE",
+  "path": "systems/{systemId}/cloudrules/{ruleId}",
+  "has_body": false,
+  "headers": [
+   "connection: close"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "ruleId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "RulesApi",
+  "package": "com.vivint.data.rules.remote.network.api",
+  "file": "com/vivint/data/rules/remote/network/api/RulesApi.java",
+  "function": "getRules",
+  "http_method": "GET",
+  "path": "systems/{systemId}/cloudrules",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "did",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "RulesApi",
+  "package": "com.vivint.data.rules.remote.network.api",
+  "file": "com/vivint/data/rules/remote/network/api/RulesApi.java",
+  "function": "getRulesMeta",
+  "http_method": "GET",
+  "path": "system/{systemId}/{partitionId}/cloudrules/meta",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "partitionId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "RulesApi",
+  "package": "com.vivint.data.rules.remote.network.api",
+  "file": "com/vivint/data/rules/remote/network/api/RulesApi.java",
+  "function": "updateRule",
+  "http_method": "PUT",
+  "path": "systems/{systemId}/cloudrules/{ruleId}",
+  "has_body": false,
+  "headers": [
+   "connection: close"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "ruleId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "updateRuleRequest",
+    "var": "updateRuleRequest",
+    "type": "UpdateRuleRequest",
+    "type_fqcn": "com.vivint.data.rules.remote.network.api.UpdateRuleRequest"
+   }
+  ]
+ },
+ {
+  "interface": "MaintenanceModeRestApi",
+  "package": "com.vivint.data.securitystate.remote.impl.network.api",
+  "file": "com/vivint/data/securitystate/remote/impl/network/api/MaintenanceModeRestApi.java",
+  "function": "disableMaintenanceMode",
+  "http_method": "POST",
+  "path": "/panel-api/v1/system/{system_id}/enable-security",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "j",
+    "type": "long",
+    "type_fqcn": "long"
+   }
+  ]
+ },
+ {
+  "interface": "MaintenanceModeRestApi",
+  "package": "com.vivint.data.securitystate.remote.impl.network.api",
+  "file": "com/vivint/data/securitystate/remote/impl/network/api/MaintenanceModeRestApi.java",
+  "function": "enableMaintenanceMode",
+  "http_method": "POST",
+  "path": "/panel-api/v1/system/{system_id}/disable-security",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "j",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Body",
+    "name": "maintenanceModeRequestDto",
+    "var": "maintenanceModeRequestDto",
+    "type": "MaintenanceModeRequestDto",
+    "type_fqcn": "com.vivint.data.securitystate.remote.impl.network.api.model.MaintenanceModeRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "ManualAlarmRestApi",
+  "package": "com.vivint.data.securitystate.remote.impl.network.api",
+  "file": "com/vivint/data/securitystate/remote/impl/network/api/ManualAlarmRestApi.java",
+  "function": "triggerAlarm",
+  "http_method": "POST",
+  "path": "{system_id}/1/alarm",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "j",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Body",
+    "name": "manualAlarmRequestDto",
+    "var": "manualAlarmRequestDto",
+    "type": "ManualAlarmRequestDto",
+    "type_fqcn": "com.vivint.data.securitystate.remote.impl.network.api.model.ManualAlarmRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "AddSensorApi",
+  "package": "com.vivint.data.sensors.remote",
+  "file": "com/vivint/data/sensors/remote/AddSensorApi.java",
+  "function": "addSensor",
+  "http_method": "POST",
+  "path": "/sensor-api/v2/system/{systemId}/sensors",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "addSensorRequestDto",
+    "var": "addSensorRequestDto",
+    "type": "AddSensorRequestDto",
+    "type_fqcn": "com.vivint.data.sensors.remote.model.AddSensorRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "AddSensorApi",
+  "package": "com.vivint.data.sensors.remote",
+  "file": "com/vivint/data/sensors/remote/AddSensorApi.java",
+  "function": "getSensors",
+  "http_method": "GET",
+  "path": "/sensor-api/v2/system/{systemId}/sensors",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SensorOperationsApi",
+  "package": "com.vivint.data.sensors.remote",
+  "file": "com/vivint/data/sensors/remote/SensorOperationsApi.java",
+  "function": "deleteSensor",
+  "http_method": "DELETE",
+  "path": "/sensor-api/v2/system/{systemId}/sensors/{sensorId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "sensorId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "SensorOperationsApi",
+  "package": "com.vivint.data.sensors.remote",
+  "file": "com/vivint/data/sensors/remote/SensorOperationsApi.java",
+  "function": "getSensor",
+  "http_method": "GET",
+  "path": "/sensor-api/v2/system/{systemId}/sensor/{sensorId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "sensorId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "SensorOperationsApi",
+  "package": "com.vivint.data.sensors.remote",
+  "file": "com/vivint/data/sensors/remote/SensorOperationsApi.java",
+  "function": "updateSensorName",
+  "http_method": "POST",
+  "path": "/sensor-api/v2/system/{systemId}/sensors/{sensorId}:update-name",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "sensorId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "updateSensorNameRequestDto",
+    "var": "updateSensorNameRequestDto",
+    "type": "UpdateSensorNameRequestDto",
+    "type_fqcn": "com.vivint.data.sensors.remote.model.UpdateSensorNameRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "SensorOperationsApi",
+  "package": "com.vivint.data.sensors.remote",
+  "file": "com/vivint/data/sensors/remote/SensorOperationsApi.java",
+  "function": "updateSensorSettings",
+  "http_method": "PUT",
+  "path": "/sensor-api/v2/system/{systemId}/sensors/{sensorId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "sensorId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "updateSensorSettingsRequestDto",
+    "var": "updateSensorSettingsRequestDto",
+    "type": "UpdateSensorSettingsRequestDto",
+    "type_fqcn": "com.vivint.data.sensors.remote.model.UpdateSensorSettingsRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "ContentManagementApi",
+  "package": "com.vivint.data.shop.remote",
+  "file": "com/vivint/data/shop/remote/ContentManagementApi.java",
+  "function": "getContent",
+  "http_method": "GET",
+  "path": "/v2/app/content/{contentId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "contentId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "latest",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "ContentManagementApi",
+  "package": "com.vivint.data.shop.remote",
+  "file": "com/vivint/data/shop/remote/ContentManagementApi.java",
+  "function": "getEducationArticle",
+  "http_method": "GET",
+  "path": "/v1/app/education/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "latest",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "StoreApi",
+  "package": "com.vivint.data.shop.remote",
+  "file": "com/vivint/data/shop/remote/StoreApi.java",
+  "function": "getEligibilityApiUrl",
+  "http_method": "GET",
+  "path": "platform-settings-api/v1/platformsettings/vttokenbridgeurl",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<PlatformSettingResponse>>",
+  "params": []
+ },
+ {
+  "interface": "StoreApi",
+  "package": "com.vivint.data.shop.remote",
+  "file": "com/vivint/data/shop/remote/StoreApi.java",
+  "function": "getStoreCDNUrl",
+  "http_method": "GET",
+  "path": "platform-settings-api/v1/platformsettings/cdnurl",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<StorePlatformSettingResponse>>",
+  "params": []
+ },
+ {
+  "interface": "StoreApi",
+  "package": "com.vivint.data.shop.remote",
+  "file": "com/vivint/data/shop/remote/StoreApi.java",
+  "function": "getStoreUrl",
+  "http_method": "GET",
+  "path": "platform-settings-api/v1/platformsettings/vturl",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<StorePlatformSettingResponse>>",
+  "params": []
+ },
+ {
+  "interface": "SmartDriveApi",
+  "package": "com.vivint.data.smartdrive.remote.impl",
+  "file": "com/vivint/data/smartdrive/remote/impl/SmartDriveApi.java",
+  "function": "associateSmartDrive",
+  "http_method": "POST",
+  "path": "dvr-associate",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "smartDriveAssociateDto",
+    "var": "smartDriveAssociateDto",
+    "type": "SmartDriveAssociateDto",
+    "type_fqcn": "com.vivint.data.smartdrive.remote.impl.dto.SmartDriveAssociateDto"
+   }
+  ]
+ },
+ {
+  "interface": "SupportArticleApi",
+  "package": "com.vivint.data.support.remote.impl.network.api",
+  "file": "com/vivint/data/support/remote/impl/network/api/SupportArticleApi.java",
+  "function": "getSupportArticle",
+  "http_method": "GET",
+  "path": "articles/{articleId}?format=appJson",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "articleId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRefreshApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRefreshApi.java",
+  "function": "getSystem",
+  "http_method": "GET",
+  "path": "systems/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<String>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "id",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "includerules",
+    "var": "includeRules",
+    "type": "boolean",
+    "type_fqcn": "boolean"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "createUser",
+  "http_method": "PUT",
+  "path": "/api/systems/{systemId}/users",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "SystemUserUpdateDTO",
+    "type_fqcn": "com.vivint.data.system.api.model.SystemUserUpdateDTO"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "deleteShsUser",
+  "http_method": "DELETE",
+  "path": "systems/{systemId}/shsUsers/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "userId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "deleteSystem",
+  "http_method": "DELETE",
+  "path": "link-users",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "deleteUser",
+  "http_method": "DELETE",
+  "path": "systems/{systemId}/users/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "userId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "resetSmartAssistantSettings",
+  "http_method": "PUT",
+  "path": "/api/systems/{systemId}/settings",
+  "has_body": false,
+  "headers": [
+   "Content-Type: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "settings",
+    "var": "settings",
+    "type": "SmartAssistantResetDTO",
+    "type_fqcn": "com.vivint.data.system.impl.net.SmartAssistantResetDTO"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "updateSystemSettings",
+  "http_method": "PUT",
+  "path": "/api/systems/{systemId}/settings",
+  "has_body": false,
+  "headers": [
+   "Content-Type: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "settings",
+    "var": "settings",
+    "type": "SystemSettingsUpdateDTO",
+    "type_fqcn": "com.vivint.data.system.api.model.SystemSettingsUpdateDTO"
+   }
+  ]
+ },
+ {
+  "interface": "SystemRestApi",
+  "package": "com.vivint.data.system.impl.net",
+  "file": "com/vivint/data/system/impl/net/SystemRestApi.java",
+  "function": "updateUser",
+  "http_method": "PUT",
+  "path": "/api/systems/{systemId}/users/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "userId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "SystemUserUpdateDTO",
+    "type_fqcn": "com.vivint.data.system.api.model.SystemUserUpdateDTO"
+   }
+  ]
+ },
+ {
+  "interface": "TargetedCameraRestApi",
+  "package": "com.vivint.data.targetedcamera.remote.impl.network.api",
+  "file": "com/vivint/data/targetedcamera/remote/impl/network/api/TargetedCameraRestApi.java",
+  "function": "getAllCameras",
+  "http_method": "GET",
+  "path": "/api/systems/{system_id}/cameras",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "AuthenticatedUserApi",
+  "package": "com.vivint.data.user.remote.impl.network",
+  "file": "com/vivint/data/user/remote/impl/network/AuthenticatedUserApi.java",
+  "function": "getUser",
+  "http_method": "GET",
+  "path": "/api/authuser",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "AuthenticatedUserApi",
+  "package": "com.vivint.data.user.remote.impl.network",
+  "file": "com/vivint/data/user/remote/impl/network/AuthenticatedUserApi.java",
+  "function": "updateUserProperty",
+  "http_method": "PUT",
+  "path": "/api/platform-users/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "userPropertiesUpdateRequestDTO",
+    "var": "userPropertiesUpdateRequestDTO",
+    "type": "UserPropertiesUpdateRequestDTO",
+    "type_fqcn": "com.vivint.data.user.remote.api.model.UserPropertiesUpdateRequestDTO"
+   }
+  ]
+ },
+ {
+  "interface": "AuthenticatedUserApi",
+  "package": "com.vivint.data.user.remote.impl.network",
+  "file": "com/vivint/data/user/remote/impl/network/AuthenticatedUserApi.java",
+  "function": "updateUserPropertyV0",
+  "http_method": "PUT",
+  "path": "/platform-user-api/v0/platformusers/{userId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "userPropertiesUpdateRequestDTO",
+    "var": "userPropertiesUpdateRequestDTO",
+    "type": "UserPropertiesUpdateRequestDTO",
+    "type_fqcn": "com.vivint.data.user.remote.api.model.UserPropertiesUpdateRequestDTO"
+   }
+  ]
+ },
+ {
+  "interface": "VideoSearchRemoteFeedbackRetroApi",
+  "package": "com.vivint.data.videosearch.remote.impl",
+  "file": "com/vivint/data/videosearch/remote/impl/VideoSearchRemoteFeedbackRetroApi.java",
+  "function": "sendFeedback",
+  "http_method": "POST",
+  "path": "feedback",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Header",
+    "name": "Authorization",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "feedbackResultDto",
+    "var": "feedbackResultDto",
+    "type": "FeedbackResultDto",
+    "type_fqcn": "com.vivint.data.videosearch.remote.impl.FeedbackResultDto"
+   }
+  ]
+ },
+ {
+  "interface": "VideoSearchRemoteQueryRetroApi",
+  "package": "com.vivint.data.videosearch.remote.impl",
+  "file": "com/vivint/data/videosearch/remote/impl/VideoSearchRemoteQueryRetroApi.java",
+  "function": "postQuery",
+  "http_method": "POST",
+  "path": "query",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Header",
+    "name": "Authorization",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "dvrSearchQueryDto",
+    "var": "dvrSearchQueryDto",
+    "type": "DvrSearchQueryDto",
+    "type_fqcn": "com.vivint.data.videosearch.remote.impl.DvrSearchQueryDto"
+   }
+  ]
+ },
+ {
+  "interface": "OpenIdConfigApi",
+  "package": "com.vivint.nrg.sdk.internal.auth.impl.config",
+  "file": "com/vivint/nrg/sdk/internal/auth/impl/config/OpenIdConfigApi.java",
+  "function": "identity",
+  "http_method": "GET",
+  "path": ".well-known/openid-configuration",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "NrgTokenApi",
+  "package": "com.vivint.nrg.sdk.internal.auth.impl.token.nrg",
+  "file": "com/vivint/nrg/sdk/internal/auth/impl/token/nrg/NrgTokenApi.java",
+  "function": "auth",
+  "http_method": "POST",
+  "path": "v1/auth",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Call<NrgToken>",
+  "params": [
+   {
+    "kind": "Header",
+    "name": "x-api-key",
+    "var": "apiKey",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Header",
+    "name": "ciam-authorization",
+    "var": "ciamAuthorization",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "emptyBody",
+    "var": "emptyBody",
+    "type": "Body",
+    "type_fqcn": "retrofit2.http.Body"
+   }
+  ]
+ },
+ {
+  "interface": "RedirectingEitherApi",
+  "package": "com.vivint.oauth.internal.network.api",
+  "file": "com/vivint/oauth/internal/network/api/RedirectingEitherApi.java",
+  "function": "identity",
+  "http_method": "GET",
+  "path": ".well-known/openid-configuration",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "RedirectingEitherApi",
+  "package": "com.vivint.oauth.internal.network.api",
+  "file": "com/vivint/oauth/internal/network/api/RedirectingEitherApi.java",
+  "function": "login",
+  "http_method": "POST",
+  "path": "/idp/api/submit",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "client_id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "credentials",
+    "var": "credentials",
+    "type": "Credentials",
+    "type_fqcn": "com.vivint.oauth.internal.model.Credentials"
+   }
+  ]
+ },
+ {
+  "interface": "DeviceApi",
+  "package": "com.vivint.sdkcore.device.net",
+  "file": "com/vivint/sdkcore/device/net/DeviceApi.java",
+  "function": "synchronize",
+  "http_method": "POST",
+  "path": "{panelId}/sync-device/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "HubApi",
+  "package": "com.vivint.security.hub.setup.controls",
+  "file": "com/vivint/security/hub/setup/controls/HubApi.java",
+  "function": "getWifiCredsValid",
+  "http_method": "POST",
+  "path": "/app/v1/wifi/verify",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "verifyPasswordRequestDto",
+    "var": "verifyPasswordRequestDto",
+    "type": "VerifyPasswordRequestDto",
+    "type_fqcn": "com.vivint.security.hub.setup.controls.dto.VerifyPasswordRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "HubApi",
+  "package": "com.vivint.security.hub.setup.controls",
+  "file": "com/vivint/security/hub/setup/controls/HubApi.java",
+  "function": "getWifiCredsValidComplete",
+  "http_method": "POST",
+  "path": "/app/v1/wifi/verify_complete",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "verifyPasswordRequestDto",
+    "var": "verifyPasswordRequestDto",
+    "type": "VerifyPasswordRequestDto",
+    "type_fqcn": "com.vivint.security.hub.setup.controls.dto.VerifyPasswordRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "HubApi",
+  "package": "com.vivint.security.hub.setup.controls",
+  "file": "com/vivint/security/hub/setup/controls/HubApi.java",
+  "function": "getWifiCredsValidStart",
+  "http_method": "POST",
+  "path": "/app/v1/wifi/verify_start",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "verifyPasswordRequestDto",
+    "var": "verifyPasswordRequestDto",
+    "type": "VerifyPasswordRequestDto",
+    "type_fqcn": "com.vivint.security.hub.setup.controls.dto.VerifyPasswordRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "AlarmApi",
+  "package": "com.vivint.security.sdk.features.alarm.net",
+  "file": "com/vivint/security/sdk/features/alarm/net/AlarmApi.java",
+  "function": "verifyAlarm",
+  "http_method": "POST",
+  "path": "/alarm-api/v2/{systemID}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemID",
+    "var": "systemID",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "AlarmVerificationDto",
+    "type_fqcn": "com.vivint.security.sdk.features.alarm.net.AlarmVerificationDto"
+   }
+  ]
+ },
+ {
+  "interface": "GarageDoorApi",
+  "package": "com.vivint.security.sdk.features.garageDoor",
+  "file": "com/vivint/security/sdk/features/garageDoor/GarageDoorApi.java",
+  "function": "putGarageDoorValues",
+  "http_method": "PUT",
+  "path": "{panelId}/{partitionId}/door/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "partitionId",
+    "var": "partitionId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "GarageDoorRequestDto",
+    "type_fqcn": "com.vivint.security.sdk.features.garageDoor.GarageDoorRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "LockApi",
+  "package": "com.vivint.security.sdk.features.locks.network",
+  "file": "com/vivint/security/sdk/features/locks/network/LockApi.java",
+  "function": "putLockValue",
+  "http_method": "PUT",
+  "path": "{panelId}/{partitionId}/locks/{lockId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "partitionId",
+    "var": "partitionId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "lockId",
+    "var": "lockId",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "LockRequestDto",
+    "type_fqcn": "com.vivint.security.sdk.features.locks.network.model.LockRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "PanelUserApi",
+  "package": "com.vivint.security.sdk.features.panelUser",
+  "file": "com/vivint/security/sdk/features/panelUser/PanelUserApi.java",
+  "function": "updatePanelUserPin",
+  "http_method": "PUT",
+  "path": "panel-user-api/v1/systems/{systemId}/users/{userId}/code",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "userId",
+    "var": "userId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "PanelUserPinRequestDto",
+    "type_fqcn": "com.vivint.security.sdk.features.panelUser.PanelUserPinRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "RestSensorApi",
+  "package": "com.vivint.security.sdk.features.sensors.network",
+  "file": "com/vivint/security/sdk/features/sensors/network/RestSensorApi.java",
+  "function": "addSensor",
+  "http_method": "POST",
+  "path": "/sensor-api/v2/system/{systemId}/sensors",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<AddSensorResponseDto>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Body",
+    "name": "sensorData",
+    "var": "sensorData",
+    "type": "SensorPostDto",
+    "type_fqcn": "com.vivint.security.sdk.features.sensors.network.model.SensorPostDto"
+   }
+  ]
+ },
+ {
+  "interface": "RestSensorApi",
+  "package": "com.vivint.security.sdk.features.sensors.network",
+  "file": "com/vivint/security/sdk/features/sensors/network/RestSensorApi.java",
+  "function": "deleteSensor",
+  "http_method": "DELETE",
+  "path": "/sensor-api/v2/system/{system_id}/sensors/{sensor_id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "systemId",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Path",
+    "name": "sensor_id",
+    "var": "sensorId",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "RestSensorApi",
+  "package": "com.vivint.security.sdk.features.sensors.network",
+  "file": "com/vivint/security/sdk/features/sensors/network/RestSensorApi.java",
+  "function": "registerSensors",
+  "http_method": "POST",
+  "path": "/sensor-api/v2/system/{system_id}/sensors/register",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "system_id",
+    "var": "systemId",
+    "type": "long",
+    "type_fqcn": "long"
+   }
+  ]
+ },
+ {
+  "interface": "RestSensorApi",
+  "package": "com.vivint.security.sdk.features.sensors.network",
+  "file": "com/vivint/security/sdk/features/sensors/network/RestSensorApi.java",
+  "function": "saveSensor",
+  "http_method": "PUT",
+  "path": "/sensor-api/v2/system/{systemId}/sensors/{sensorId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Path",
+    "name": "sensorId",
+    "var": "sensorId",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "sensorData",
+    "var": "sensorData",
+    "type": "SensorRequestDto",
+    "type_fqcn": "com.vivint.security.sdk.features.sensors.network.model.SensorRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "ZwaveApi",
+  "package": "com.vivint.security.sdk.features.zwave.network",
+  "file": "com/vivint/security/sdk/features/zwave/network/ZwaveApi$Add.java",
+  "function": "addZwaveDevice",
+  "http_method": "POST",
+  "path": "zwave-api/v1/system/{systemId}/devices",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<String>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "AddZwaveDeviceRequestDto",
+    "type_fqcn": "com.vivint.security.sdk.features.zwave.network.model.AddZwaveDeviceRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "ZwaveApi",
+  "package": "com.vivint.security.sdk.features.zwave.network",
+  "file": "com/vivint/security/sdk/features/zwave/network/ZwaveApi$Add.java",
+  "function": "addZwaveSmartStartDevice",
+  "http_method": "POST",
+  "path": "device-api/v1/systems/{systemId}/smart-start-devices",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<String>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "AddZwaveDeviceRequestDto",
+    "type_fqcn": "com.vivint.security.sdk.features.zwave.network.model.AddZwaveDeviceRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "ZwaveKeypadAPI",
+  "package": "com.vivint.security.sdk.features.zwave.network",
+  "file": "com/vivint/security/sdk/features/zwave/network/ZwaveKeypadAPI.java",
+  "function": "putKeypadSetting",
+  "http_method": "PUT",
+  "path": "device-api/v1/systems/{systemId}/devices/{deviceId}/capabilities/{settingPath}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Path",
+    "name": "settingPath",
+    "var": "settingsKey",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "ZwaveKeypadRequestDto",
+    "type_fqcn": "com.vivint.data.keypad.remote.impl.network.dto.ZwaveKeypadRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "AwaylightRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/AwaylightRetrofitApi.java",
+  "function": "getAwaylightSettings",
+  "http_method": "GET",
+  "path": "smartdeter/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<AwaylightDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "AwaylightRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/AwaylightRetrofitApi.java",
+  "function": "resetShortcutsOnboarding",
+  "http_method": "PUT",
+  "path": "api/systems/{systemId}/settings",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "onboardingComplete",
+    "var": "onboardingComplete",
+    "type": "OnboardingSettingsDTO",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.awaylight.OnboardingSettingsDTO"
+   }
+  ]
+ },
+ {
+  "interface": "AwaylightRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/AwaylightRetrofitApi.java",
+  "function": "setAwayLightAutomationTrigger",
+  "http_method": "POST",
+  "path": "smartdeter/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "automationTrigger",
+    "var": "automationTrigger",
+    "type": "AwaylightSettingsDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.awaylight.AwaylightSettingsDto"
+   }
+  ]
+ },
+ {
+  "interface": "AwaylightRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/AwaylightRetrofitApi.java",
+  "function": "setAwaylightEndTime",
+  "http_method": "POST",
+  "path": "smartdeter/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "settings",
+    "var": "settings",
+    "type": "EndTimeDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.awaylight.EndTimeDto"
+   }
+  ]
+ },
+ {
+  "interface": "AwaylightRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/AwaylightRetrofitApi.java",
+  "function": "setAwaylightSettings",
+  "http_method": "POST",
+  "path": "smartdeter/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "settings",
+    "var": "settings",
+    "type": "AwaylightSettingsDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.awaylight.AwaylightSettingsDto"
+   }
+  ]
+ },
+ {
+  "interface": "AwaylightRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/AwaylightRetrofitApi.java",
+  "function": "setAwaylightStartTime",
+  "http_method": "POST",
+  "path": "smartdeter/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "settings",
+    "var": "settings",
+    "type": "StartTimeDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.awaylight.StartTimeDto"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "createShortcut",
+  "http_method": "POST",
+  "path": "cloudrules/v2/systems/{systemId}/routines",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionResponseDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "editShortcutBody",
+    "var": "editShortcutBody",
+    "type": "EditShortcutDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.EditShortcutDto"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "deleteActionInShortcut",
+  "http_method": "DELETE",
+  "path": "cloudrules/v2/systems/{systemId}/routines/{routineId}/action/{actionId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "actionId",
+    "var": "actionId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "deleteShortcut",
+  "http_method": "DELETE",
+  "path": "cloudrules/v2/systems/{systemId}/routines/{routineId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "editActionInShortcut",
+  "http_method": "PUT",
+  "path": "cloudrules/v2/systems/{systemId}/routines/{routineId}/action/{actionId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "actionId",
+    "var": "actionId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "action",
+    "var": "action",
+    "type": "Action",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.Action"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "editShortcut",
+  "http_method": "PUT",
+  "path": "cloudrules/v2/systems/{systemId}/routines/{routineId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "editShortcutBody",
+    "var": "editShortcutBody",
+    "type": "EditShortcutDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.EditShortcutDto"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "editShortcutTrigger",
+  "http_method": "PUT",
+  "path": "cloudrules/v2/systems/{systemId}/routines/{routineId}/trigger/{triggerId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "triggerId",
+    "var": "triggerId",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "triggerRequest",
+    "var": "triggerRequest",
+    "type": "TriggerRequest",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.trigger.TriggerRequest"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "executeShortcut",
+  "http_method": "POST",
+  "path": "cloudrules/v2/systems/{systemId}/execute-routine/{routineId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<ExecuteShortcutResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "getAllActions",
+  "http_method": "GET",
+  "path": "/cloudrules/v2/systems/{systemId}/actions",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<ActionsResponseDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "getAllPossibleConditions",
+  "http_method": "GET",
+  "path": "cloudrules/v2/systems/{systemId}/conditions",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<ConditionsResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "getAllPossibleTriggers",
+  "http_method": "GET",
+  "path": "cloudrules/v2/systems/{systemId}/triggers",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<TriggersResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "getShortcuts",
+  "http_method": "GET",
+  "path": "cloudrules/v2/systems/{systemId}/routines",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionResponseDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "getSuggestedRoutines",
+  "http_method": "GET",
+  "path": "cloudrules/v2/systems/{systemId}/suggested",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionResponseDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "resetShortcutsOnboarding",
+  "http_method": "PUT",
+  "path": "api/systems/{systemId}/settings",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "onboarding",
+    "var": "onboarding",
+    "type": "ShortcutsOnboardingStateDTO",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.ShortcutsOnboardingStateDTO"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "saveSuggestedShortcuts",
+  "http_method": "POST",
+  "path": "cloudrules/v2/systems/{systemId}/suggested",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionResponseDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "shortcuts",
+    "var": "shortcuts",
+    "type": "SmartActionResponseDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.SmartActionResponseDto"
+   }
+  ]
+ },
+ {
+  "interface": "ShortcutsRetrofitApi",
+  "package": "com.vivint.smartactions.sdk.net",
+  "file": "com/vivint/smartactions/sdk/net/ShortcutsRetrofitApi.java",
+  "function": "updateRoutine",
+  "http_method": "PUT",
+  "path": "cloudrules/v2/systems/{systemId}/routines/{routineId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<SmartActionDto>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "routineId",
+    "var": "shortcutId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "editShortcutBody",
+    "var": "editShortcutBody",
+    "type": "EditShortcutDto",
+    "type_fqcn": "com.vivint.smartactions.sdk.dto.EditShortcutDto"
+   }
+  ]
+ },
+ {
+  "interface": "CameraAnalyticsEventsApi",
+  "package": "com.vivint.smarthome.sdk.net.device.camera.net",
+  "file": "com/vivint/smarthome/sdk/net/device/camera/net/CameraAnalyticsEventsApi.java",
+  "function": "recordCameraViewingEvent",
+  "http_method": "POST",
+  "path": "history-api/v2/systems/{systemId}/camera-view-events",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "cameraViewingEventRequestRequestDto",
+    "var": "cameraViewingEventRequestRequestDto",
+    "type": "CameraViewingEventRequestDto",
+    "type_fqcn": "com.vivint.smarthome.sdk.device.camera.net.dto.CameraViewingEventRequestDto"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "authenticate",
+  "http_method": "POST",
+  "path": "web/v1/authentication",
+  "has_body": false,
+  "headers": [
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<AuthenticationResponse>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "auth",
+    "var": "auth",
+    "type": "AuthenticationRequest",
+    "type_fqcn": "com.vivint.smsdk.network.dto.request.AuthenticationRequest"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "createBulkSharedAccess",
+  "http_method": "POST",
+  "path": "web/v1/access-tokens",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<SharedAccessBulkResponse>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "SharedAccessBulkRequest",
+    "type_fqcn": "com.vivint.smsdk.network.dto.sharedaccess.SharedAccessBulkRequest"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "createClip",
+  "http_method": "POST",
+  "path": "web/v1/clips",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<CreateDVRClipResponse>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "recordingstartdatens",
+    "var": "recordingStartUnixNano",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "startdatens",
+    "var": "startTimeUnixNano",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "durationns",
+    "var": "durationNano",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "camera_id",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "camera_name",
+    "var": "cameraName",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "sm_supports_clips",
+    "var": "skipDistributedBackup",
+    "type": "boolean",
+    "type_fqcn": "boolean"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "createGuestClip",
+  "http_method": "POST",
+  "path": "web/v1/guest-clip",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "start_date_us",
+    "var": "clipStartTimeMicros",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "duration_us",
+    "var": "durationMicros",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "camera_id",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "createSharedAccess",
+  "http_method": "POST",
+  "path": "web/v1/access-token",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<SharedAccessResponse>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "SharedAccessRequest",
+    "type_fqcn": "com.vivint.smsdk.network.dto.sharedaccess.SharedAccessRequest"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "deleteClip",
+  "http_method": "DELETE",
+  "path": "web/v1/clips/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<DeleteDVRClipResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "clipId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getCameras",
+  "http_method": "GET",
+  "path": "cameras",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Cameras>",
+  "params": []
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getClip",
+  "http_method": "GET",
+  "path": "web/v1/clips/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "clipId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getClipFlow",
+  "http_method": "GET",
+  "path": "web/v1/clips/{id}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getClipThumbnail",
+  "http_method": "GET",
+  "path": "web/v1/clips/{id}/thumbnail",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "id",
+    "var": "clipId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getEvents",
+  "http_method": "GET",
+  "path": "web/v1/events",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<List<Event>>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "camera_id",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "start_time",
+    "var": "startTimeEpochMicroSeconds",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "stop_time",
+    "var": "endTimeEpochMicroSeconds",
+    "type": "long",
+    "type_fqcn": "long"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getRecordings",
+  "http_method": "GET",
+  "path": "recordings",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Recordings>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "CameraConst.TABLE_NAME",
+    "var": "cameraName",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getStatus",
+  "http_method": "GET",
+  "path": "web/v1/status",
+  "has_body": false,
+  "headers": [
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<DVRStatus>",
+  "params": []
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getThumbnailIndexes",
+  "http_method": "GET",
+  "path": "camstreams/Video-{cameraId}/{recordingId}/stream.m3u8.jpgsblob.index",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "cameraId",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "recordingId",
+    "var": "recordingId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getThumbnails",
+  "http_method": "GET",
+  "path": "camstreams/Video-{cameraId}/{recordingId}/stream.m3u8.jpgsblob",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "cameraId",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "recordingId",
+    "var": "recordingId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Header",
+    "name": "Range",
+    "var": "range",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getVideoPreview",
+  "http_method": "GET",
+  "path": "{filename}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "filename",
+    "var": "filename",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getVideoPreview",
+  "http_method": "GET",
+  "path": "web/v1/twizz",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<VideoPreviewResponse>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "camera_id",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "timestampus",
+    "var": "timeStampMicros",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "width",
+    "var": "width",
+    "type": "Integer",
+    "type_fqcn": "Integer"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "getVideoPreview",
+  "http_method": "GET",
+  "path": "web/v1/twizz",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<VideoPreviewResponse>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "camera_id",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "timestampus",
+    "var": "timeStampMicros",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "duration",
+    "var": "duration",
+    "type": "Integer",
+    "type_fqcn": "Integer"
+   },
+   {
+    "kind": "Query",
+    "name": "width",
+    "var": "width",
+    "type": "Integer",
+    "type_fqcn": "Integer"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "listClips",
+  "http_method": "GET",
+  "path": "web/v1/clips",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ListDVRClipsResponse>",
+  "params": []
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "previewImage",
+  "http_method": "GET",
+  "path": "web/v1/preview",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<ResponseBody>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "timestampus",
+    "var": "timeStampMicros",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Query",
+    "name": "camera_id",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "width",
+    "var": "imageWidth",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "restart",
+  "http_method": "POST",
+  "path": "web/v1/restart",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<BasicDVRResponse>",
+  "params": []
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "revokeBulkSharedAccess",
+  "http_method": "DELETE",
+  "path": "web/v1/access-tokens",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<List<SharedAccessRevocationResponse>>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "SharedAccessBulkRevocationRequest",
+    "type_fqcn": "com.vivint.smsdk.network.dto.sharedaccess.SharedAccessBulkRevocationRequest"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "revokeSharedAccess",
+  "http_method": "DELETE",
+  "path": "web/v1/access-token",
+  "has_body": true,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<SharedAccessRevocationResponse>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "SharedAccessRevocationRequest",
+    "type_fqcn": "com.vivint.smsdk.network.dto.sharedaccess.SharedAccessRevocationRequest"
+   }
+  ]
+ },
+ {
+  "interface": "DVRService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/DVRService.java",
+  "function": "updateCamera",
+  "http_method": "POST",
+  "path": "web/v1/camera/{cameraId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<BasicDVRResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "cameraId",
+    "var": "cameraId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "modRequest",
+    "var": "modRequest",
+    "type": "ModifyCameraRequest",
+    "type_fqcn": "com.vivint.smsdk.network.dto.request.ModifyCameraRequest"
+   }
+  ]
+ },
+ {
+  "interface": "SpaceMonkeyAccountService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/SpaceMonkeyAccountService.java",
+  "function": "dvrGetCertsAndHardwareId",
+  "http_method": "GET",
+  "path": "v2/playback/certs",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<HardwareAndCertsResponse>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "dvr_service_id",
+    "var": "dvrServiceId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SpaceMonkeyAccountService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/SpaceMonkeyAccountService.java",
+  "function": "hwidForEdgeDevice",
+  "http_method": "GET",
+  "path": "v2/playback/edge-hwid",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<HardwareAndCertsResponse>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "dvr_service_id",
+    "var": "dvrServiceId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "edge_device_uuid",
+    "var": "edgeDeviceUuid",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SpaceMonkeyAccountService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/SpaceMonkeyAccountService.java",
+  "function": "userSelf",
+  "http_method": "GET",
+  "path": "users/self",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<UserSelf>",
+  "params": []
+ },
+ {
+  "interface": "SpaceMonkeyDirectoryService",
+  "package": "com.vivint.smsdk.api.service",
+  "file": "com/vivint/smsdk/api/service/SpaceMonkeyDirectoryService.java",
+  "function": "getDeviceAddressMM",
+  "http_method": "GET",
+  "path": "directory/mm/entry/hardware/{hwid}",
+  "has_body": false,
+  "headers": [
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<MachoManLookupResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "hwid",
+    "var": "hardwareId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "MultiFactorAuthApi",
+  "package": "com.vivint.ui.account.features.mfa.net",
+  "file": "com/vivint/ui/account/features/mfa/net/MultiFactorAuthApi.java",
+  "function": "cancelSetupSession",
+  "http_method": "DELETE",
+  "path": "/platform-user-api/v0/platformusers/2fa/account",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "MultiFactorAuthApi",
+  "package": "com.vivint.ui.account.features.mfa.net",
+  "file": "com/vivint/ui/account/features/mfa/net/MultiFactorAuthApi.java",
+  "function": "createSetupSession",
+  "http_method": "POST",
+  "path": "/platform-user-api/v0/platformusers/2fa/account",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "MultiFactorAuthApi",
+  "package": "com.vivint.ui.account.features.mfa.net",
+  "file": "com/vivint/ui/account/features/mfa/net/MultiFactorAuthApi.java",
+  "function": "disableMfa",
+  "http_method": "POST",
+  "path": "/platform-user-api/v0/platformusers/2fa/disable",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": []
+ },
+ {
+  "interface": "MultiFactorAuthApi",
+  "package": "com.vivint.ui.account.features.mfa.net",
+  "file": "com/vivint/ui/account/features/mfa/net/MultiFactorAuthApi.java",
+  "function": "enableMfa",
+  "http_method": "POST",
+  "path": "/platform-user-api/v0/platformusers/2fa/enable",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "oTPCodeDTO",
+    "var": "oTPCodeDTO",
+    "type": "OTPCodeDTO",
+    "type_fqcn": "com.vivint.ui.account.features.mfa.net.OTPCodeDTO"
+   }
+  ]
+ },
+ {
+  "interface": "MultiFactorAuthApi",
+  "package": "com.vivint.ui.account.features.mfa.net",
+  "file": "com/vivint/ui/account/features/mfa/net/MultiFactorAuthApi.java",
+  "function": "validateMfa",
+  "http_method": "POST",
+  "path": "/platform-user-api/v0/platformusers/2fa/validate",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "oTPCodeDTO",
+    "var": "oTPCodeDTO",
+    "type": "OTPCodeDTO",
+    "type_fqcn": "com.vivint.ui.account.features.mfa.net.OTPCodeDTO"
+   }
+  ]
+ },
+ {
+  "interface": "CameraThumbnailApi",
+  "package": "com.vivint.vivintsdk.camera",
+  "file": "com/vivint/vivintsdk/camera/CameraThumbnailApi.java",
+  "function": "getCameraThumbnailPaneled",
+  "http_method": "GET",
+  "path": "{systemID}/1/{cameraID}/camera-thumbnail",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemID",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "cameraID",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Header",
+    "name": "if-none-match",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "VivintSkyService",
+  "package": "com.vivint.vivintsdk",
+  "file": "com/vivint/vivintsdk/VivintSkyService.java",
+  "function": "authUser",
+  "http_method": "GET",
+  "path": "authuser",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Object>",
+  "params": []
+ },
+ {
+  "interface": "VivintSkyService",
+  "package": "com.vivint.vivintsdk",
+  "file": "com/vivint/vivintsdk/VivintSkyService.java",
+  "function": "getAuthorizationEndpoint",
+  "http_method": "GET",
+  "path": "openid-configuration",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Object>",
+  "params": []
+ },
+ {
+  "interface": "VivintSkyService",
+  "package": "com.vivint.vivintsdk",
+  "file": "com/vivint/vivintsdk/VivintSkyService.java",
+  "function": "getEventsBetweenTimes",
+  "http_method": "GET",
+  "path": "{panelId}/0/history/{cameraId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<EventHistoryResponse>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "cameraId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "stad",
+    "var": "str3",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "stod",
+    "var": "str4",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "lim",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Query",
+    "name": "t",
+    "var": "str5",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "collapse",
+    "var": "num",
+    "type": "Integer",
+    "type_fqcn": "Integer"
+   }
+  ]
+ },
+ {
+  "interface": "VivintSkyService",
+  "package": "com.vivint.vivintsdk",
+  "file": "com/vivint/vivintsdk/VivintSkyService.java",
+  "function": "getSystemStatus",
+  "http_method": "GET",
+  "path": "systems/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Object>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "j",
+    "type": "long",
+    "type_fqcn": "long"
+   }
+  ]
+ },
+ {
+  "interface": "VivintSkyService",
+  "package": "com.vivint.vivintsdk",
+  "file": "com/vivint/vivintsdk/VivintSkyService.java",
+  "function": "login",
+  "http_method": "POST",
+  "path": "login",
+  "has_body": false,
+  "headers": [
+   "Content-Type: application/json",
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Object>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "loginRequest",
+    "var": "loginRequest",
+    "type": "LoginRequest",
+    "type_fqcn": "com.vivint.vivintsdk.request.LoginRequest"
+   }
+  ]
+ },
+ {
+  "interface": "VivintSkyService",
+  "package": "com.vivint.vivintsdk",
+  "file": "com/vivint/vivintsdk/VivintSkyService.java",
+  "function": "resetPassword",
+  "http_method": "POST",
+  "path": "platform-users/send-password-reset",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Observable<Object>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "resetPasswordRequest",
+    "var": "resetPasswordRequest",
+    "type": "ResetPasswordRequest",
+    "type_fqcn": "com.vivint.vivintsdk.request.ResetPasswordRequest"
+   }
+  ]
+ },
+ {
+  "interface": "ThermostatApi",
+  "package": "com.vivint.vivintsky.camera.data.common.converters.thermostat",
+  "file": "com/vivint/vivintsky/camera/data/common/converters/thermostat/ThermostatApi.java",
+  "function": "putThermValue",
+  "http_method": "PUT",
+  "path": "{systemId}/1/thermostats/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "ThermostatDto",
+    "type_fqcn": "com.vivint.vivintsky.camera.data.common.converters.thermostat.ThermostatDto"
+   }
+  ]
+ },
+ {
+  "interface": "ThermostatApi",
+  "package": "com.vivint.vivintsky.camera.data.common.converters.thermostat",
+  "file": "com/vivint/vivintsky/camera/data/common/converters/thermostat/ThermostatApi.java",
+  "function": "synchronize",
+  "http_method": "POST",
+  "path": "{panelId}/sync-device/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "int",
+    "type_fqcn": "int"
+   }
+  ]
+ },
+ {
+  "interface": "CameraApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/CameraApi.java",
+  "function": "deleteClips",
+  "http_method": "PATCH",
+  "path": "{systemId}/clip-batch-delete",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "deleteClipsAction",
+    "var": "deleteClipsAction",
+    "type": "DeleteClipsAction",
+    "type_fqcn": "com.vivint.vivintsky.camera.data.remote.models.DeleteClipsAction"
+   }
+  ]
+ },
+ {
+  "interface": "CameraApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/CameraApi.java",
+  "function": "postVideoFailed",
+  "http_method": "POST",
+  "path": "videofailed/{panelId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Completable",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "j",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "CameraApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/CameraApi.java",
+  "function": "putCameraValues",
+  "http_method": "PUT",
+  "path": "{systemId}/{partitionId}/cameras/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Flowable<Response<Void>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "j",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Path",
+    "name": "partitionId",
+    "var": "i",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "LiveVideoApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/LiveVideoApi.java",
+  "function": "getCameraPushInfo",
+  "http_method": "GET",
+  "path": "system/{panelId}/device/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "LiveVideoApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/LiveVideoApi.java",
+  "function": "getPanelCredentials",
+  "http_method": "GET",
+  "path": "panel-login/{panelId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ModelObject>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "long",
+    "type_fqcn": "long"
+   }
+  ]
+ },
+ {
+  "interface": "SystemApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/SystemApi.java",
+  "function": "acknowledgeAllPanelAlerts",
+  "http_method": "POST",
+  "path": "ack-panel-alerts/1/{panelID}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Void>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelID",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SystemApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/SystemApi.java",
+  "function": "getSystemData",
+  "http_method": "GET",
+  "path": "systems/{panelId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ModelObject>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "includerules",
+    "var": "includeRules",
+    "type": "Boolean",
+    "type_fqcn": "Boolean"
+   }
+  ]
+ },
+ {
+  "interface": "SystemApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/SystemApi.java",
+  "function": "getSystemHealthData",
+  "http_method": "GET",
+  "path": "system_health/{panelId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<SystemHealthModelDto>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "SystemApi",
+  "package": "com.vivint.vivintsky.camera.data.remote",
+  "file": "com/vivint/vivintsky/camera/data/remote/SystemApi.java",
+  "function": "rebootPanel",
+  "http_method": "POST",
+  "path": "systems/{systemId}/reboot-panel",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "GoogleMapsApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/GoogleMapsApi.java",
+  "function": "getAddress",
+  "http_method": "GET",
+  "path": "geocode/json",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "address",
+    "var": "address",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "sensor",
+    "var": "sensor",
+    "type": "boolean",
+    "type_fqcn": "boolean"
+   },
+   {
+    "kind": "Query",
+    "name": "key",
+    "var": "key",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "GoogleMapsApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/GoogleMapsApi.java",
+  "function": "getAutocompleteSuggestions",
+  "http_method": "GET",
+  "path": "place/autocomplete/json",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Query",
+    "name": "input",
+    "var": "input",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "types",
+    "var": "types",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "components",
+    "var": "components",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "sessiontoken",
+    "var": "token",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Query",
+    "name": "key",
+    "var": "key",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "HomeServicesApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/HomeServicesApi.java",
+  "function": "updateNotification",
+  "http_method": "PUT",
+  "path": "systems/{panelId}/consumable-notification/{notificationId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "long",
+    "type_fqcn": "long"
+   },
+   {
+    "kind": "Path",
+    "name": "notificationId",
+    "var": "notificationId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "OpenIdApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/OpenIdApi.java",
+  "function": "openIdConfiguration",
+  "http_method": "GET",
+  "path": "/.well-known/openid-configuration",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ModelObject>>",
+  "params": []
+ },
+ {
+  "interface": "PhotoApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/PhotoApi.java",
+  "function": "getPhotoMeta",
+  "http_method": "GET",
+  "path": "photo",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": []
+ },
+ {
+  "interface": "SecurityApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/SecurityApi.java",
+  "function": "putGarageDoorValues",
+  "http_method": "PUT",
+  "path": "{panelId}/{partitionId}/door/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "partitionId",
+    "var": "partitionId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "int",
+    "type_fqcn": "int"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "SecurityApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/SecurityApi.java",
+  "function": "putSecurityState",
+  "http_method": "PUT",
+  "path": "{panelId}/{partitionId}/armedstates",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "partitionId",
+    "var": "partitionId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "SessionApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/SessionApi.java",
+  "function": "authUser",
+  "http_method": "GET",
+  "path": "authuser",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ModelObject>>",
+  "params": []
+ },
+ {
+  "interface": "SessionApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/SessionApi.java",
+  "function": "login",
+  "http_method": "POST",
+  "path": "login",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ModelObject>>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "SessionApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/SessionApi.java",
+  "function": "logout",
+  "http_method": "POST",
+  "path": "logout",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "VivintGoogleSignInApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/VivintGoogleSignInApi.java",
+  "function": "connectNest",
+  "http_method": "POST",
+  "path": "systems/{systemId}/sdm_nest_mapping/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "VivintGoogleSignInApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/VivintGoogleSignInApi.java",
+  "function": "deauthSystem",
+  "http_method": "DELETE",
+  "path": "google-sdm-connection/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "VivintGoogleSignInApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/VivintGoogleSignInApi.java",
+  "function": "disconnectNest",
+  "http_method": "DELETE",
+  "path": "systems/{systemId}/sdm_nest_mapping/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "deviceId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "VivintGoogleSignInApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/VivintGoogleSignInApi.java",
+  "function": "getOAuthURL",
+  "http_method": "GET",
+  "path": "google-sdm-oauth-builder/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "VivintGoogleSignInApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/VivintGoogleSignInApi.java",
+  "function": "getSystem",
+  "http_method": "GET",
+  "path": "systems/{systemId}/sdm_nest_mapping",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "VivintGoogleSignInApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/VivintGoogleSignInApi.java",
+  "function": "sendAuth",
+  "http_method": "GET",
+  "path": "google-sdm-oauth-code/{systemId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Single<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "systemId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Query",
+    "name": "code",
+    "var": "authKey",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "WifiApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/WifiApi.java",
+  "function": "connectPanelToAp",
+  "http_method": "POST",
+  "path": "panel/{panelId}/wifi",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Flowable<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "WifiApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/WifiApi.java",
+  "function": "getPanelWifiApList",
+  "http_method": "GET",
+  "path": "panel/{panelId}/ssid-list",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Flowable<Response<ResponseBody>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   }
+  ]
+ },
+ {
+  "interface": "WifiApi",
+  "package": "com.vivint.vivintsky.net.retrofit",
+  "file": "com/vivint/vivintsky/net/retrofit/WifiApi.java",
+  "function": "refreshPanelWifiApList",
+  "http_method": "POST",
+  "path": "panel/{panelId}/ssid-list",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Flowable<Response<Unit>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "panelId",
+    "var": "panelId",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "body",
+    "var": "body",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "UserSettingsApi",
+  "package": "com.vivint.vivintsky.signedinuser",
+  "file": "com/vivint/vivintsky/signedinuser/UserSettingsApi.java",
+  "function": "putSystemDeviceValue",
+  "http_method": "PUT",
+  "path": "system/{systemId}/device/{deviceId}",
+  "has_body": false,
+  "headers": [],
+  "form": false,
+  "multipart": false,
+  "returns": "Flowable<Response<Void>>",
+  "params": [
+   {
+    "kind": "Path",
+    "name": "systemId",
+    "var": "str",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Path",
+    "name": "deviceId",
+    "var": "str2",
+    "type": "String",
+    "type_fqcn": "String"
+   },
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ },
+ {
+  "interface": "AnalyticsService",
+  "package": "com.vivint.vivintsky.vivintmetrics",
+  "file": "com/vivint/vivintsky/vivintmetrics/AnalyticsService.java",
+  "function": "post",
+  "http_method": "POST",
+  "path": "/data",
+  "has_body": false,
+  "headers": [
+   "Accept: application/json"
+  ],
+  "form": false,
+  "multipart": false,
+  "returns": "Object",
+  "params": [
+   {
+    "kind": "Body",
+    "name": "requestBody",
+    "var": "requestBody",
+    "type": "RequestBody",
+    "type_fqcn": "okhttp3.RequestBody"
+   }
+  ]
+ }
+]

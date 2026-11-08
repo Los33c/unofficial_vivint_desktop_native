@@ -1,0 +1,217 @@
+"""Generate C# endpoint bindings for VivintDesktop from catalog.json (+ baseurls.json).
+
+Emits two files:
+  Endpoints.g.cs       - partial class VivintApi with a typed method per endpoint
+  EndpointCatalog.g.cs - static data table used by the API Explorer UI
+"""
+import json
+import re
+import sys
+from collections import defaultdict
+from pathlib import Path
+
+catalog = json.loads(Path(sys.argv[1]).read_text())
+baseurls = {}
+if len(sys.argv) > 2 and Path(sys.argv[2]).exists():
+    baseurls = json.loads(Path(sys.argv[2]).read_text())
+out_dir = Path(sys.argv[3])
+
+# literal URL strings (mirror Base.cs)
+URLS = {
+    "VIVINTSKY_API": "https://www.vivintsky.com/api/",
+    "OPENID": "https://id.vivint.com/",
+    "APIO": "https://apio.vivint.com/",
+    "MOMENTS": "https://api.moments.vivint.ai/",
+    "SHE": "https://she.platform.vivint.com",
+    "VIDEO_APPS": "https://video-apps.platform.vivint.com",
+    "METRICS": "https://telegraf.metrics.vivint.ai",
+    "GOOGLE_MAPS": "https://maps.googleapis.com/maps/api/",
+    "SMARTSHEET": "https://api.smartsheet.com/2.0/",
+    "SPACEMONKEY": "https://accounts.spacemonkey.com/",
+}
+LEGACY = (URLS["VIVINTSKY_API"], "Bearer")
+
+
+def fallback(iface, paths):
+    name = iface.lower()
+    j = " ".join(paths).lower()
+    if "googlemaps" in name:
+        return (URLS["GOOGLE_MAPS"], "None")
+    if "smartsheet" in name:
+        return (URLS["SMARTSHEET"], "Bearer")
+    if "moments" in name:
+        return (URLS["MOMENTS"], "Bearer")
+    if "spacemonkey" in name or "dvr" in name or "smartdrive" in name:
+        return (URLS["SPACEMONKEY"], "Bearer")
+    if "referafriend" in name:
+        return (URLS["APIO"], "Bearer")
+    if "nrg" in name or "/kb/" in j:
+        return (URLS["APIO"], "Bearer")
+    if "openid" in name or "redirectingeither" in name:
+        return (URLS["OPENID"], "None")
+    if "analytics" in name or "metrics" in name:
+        return (URLS["METRICS"], "Bearer")
+    if "videosearch" in name:
+        return (URLS["VIDEO_APPS"], "Bearer")
+    return LEGACY
+
+
+def _clean_auth(a):
+    a = (a or "").lower()
+    if "none" in a or "api-key" in a or "api key" in a:
+        return "None"
+    if "cookie" in a and "bearer" not in a:
+        return "Cookie"
+    return "Bearer"
+
+
+def resolve(iface, pkg, paths):
+    info = baseurls.get(f"{pkg}.{iface}")
+    if info and info.get("base_url"):
+        raw = info["base_url"]
+        # The map sometimes carries descriptive prose (config-provided / runtime
+        # hosts). Extract the first concrete https URL; if there is none, fall
+        # back to the name-pattern heuristic so we never emit a non-URL base.
+        m = re.search(r'https?://[^\s()]+', raw)
+        if m:
+            url = m.group(0).rstrip('.,;')
+            return (url, _clean_auth(info.get("auth")))
+    return fallback(iface, paths)
+
+
+def pascal(s):
+    s = re.sub(r'[^0-9a-zA-Z]+', ' ', s)
+    s = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', s)
+    parts = [p for p in s.split() if p]
+    return "".join(p[:1].upper() + p[1:] for p in parts) or "X"
+
+
+def camel(s):
+    p = pascal(s)
+    ident = p[:1].lower() + p[1:]
+    if re.match(r'^\d', ident):
+        ident = "_" + ident
+    cs_kw = {"params", "object", "string", "event", "lock", "base", "default", "class",
+             "namespace", "int", "bool", "new", "ref", "out", "in", "is", "as"}
+    if ident in cs_kw:
+        ident = "@" + ident
+    return ident
+
+
+def cs_str(s):
+    return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+groups = defaultdict(list)
+for e in catalog:
+    groups[(e["package"], e["interface"])].append(e)
+
+methods = []   # (group_pascal, method_name, http, base, auth, path, pathparams[], has_query, has_body, doc)
+seen = defaultdict(set)
+for (pkg, iface), eps in sorted(groups.items(), key=lambda kv: kv[0][1].lower()):
+    gp = pascal(iface)
+    base, auth = resolve(iface, pkg, eps and [e["path"] for e in eps])
+    for e in eps:
+        mname = pascal(e["function"])
+        if mname in seen[gp]:
+            mname = mname + pascal(e["http_method"])
+            k = 2; bm = mname
+            while mname in seen[gp]:
+                mname = f"{bm}{k}"; k += 1
+        seen[gp].add(mname)
+        path = e["path"]
+        pparams = re.findall(r'\{(\w+)\}', path)
+        has_query = any(p["kind"] in ("Query", "QueryMap") for p in e["params"])
+        has_body = e["has_body"] or e["http_method"] in ("POST", "PUT", "PATCH") or \
+            any(p["kind"] in ("Body", "Field", "FieldMap", "Part", "PartMap") for p in e["params"])
+        qnames = [p["name"] for p in e["params"] if p["kind"] == "Query"]
+        doc = f'{e["http_method"]} {path}' + (f'  ? {" ".join("{"+q+"}" for q in qnames)}' if qnames else "")
+        methods.append((gp, mname, e["http_method"], base, auth, path, pparams, has_query, has_body, doc))
+
+# ---- Endpoints.g.cs ------------------------------------------------------
+L = []
+L.append("// <auto-generated>")
+L.append("// Vivint API endpoint bindings generated from the decompiled app.")
+L.append("// Regenerate with tools/gen_csharp.py; do not edit by hand.")
+L.append("// </auto-generated>")
+L.append("#nullable enable")
+L.append("using System.Net.Http;")
+L.append("")
+L.append("namespace VivintDesktop.Api;")
+L.append("")
+L.append("public sealed partial class VivintApi")
+L.append("{")
+L.append("    private readonly VivintClient _c;")
+L.append("    public VivintClient Client => _c;")
+L.append("    public VivintApi(VivintClient client) => _c = client;")
+L.append("")
+L.append(f"    public const int EndpointCount = {len(methods)};")
+L.append("")
+
+HTTP_CS = {"GET": "HttpMethod.Get", "POST": "HttpMethod.Post", "PUT": "HttpMethod.Put",
+           "DELETE": "HttpMethod.Delete", "PATCH": "HttpMethod.Patch",
+           "HEAD": "HttpMethod.Head", "OPTIONS": "HttpMethod.Options"}
+
+
+def http_expr(m):
+    return HTTP_CS.get(m, f'new HttpMethod("{m}")')
+
+
+last_group = None
+for (gp, mname, http, base, auth, path, pparams, has_query, has_body, doc) in methods:
+    if gp != last_group:
+        if last_group is not None:
+            L.append("")
+        L.append(f"    // ---- {gp} ----")
+        last_group = gp
+    args = []
+    for p in pparams:
+        args.append(f"string {camel(p)}")
+    if has_query:
+        args.append("IReadOnlyDictionary<string, string>? query = null")
+    if has_body:
+        args.append("object? body = null")
+    args.append("CancellationToken ct = default")
+    # path interpolation
+    interp = path
+    for p in pparams:
+        interp = interp.replace("{" + p + "}", "{" + camel(p) + "}")
+    path_lit = ("$\"" + interp.replace('"', '\\"') + "\"") if pparams else cs_str(path)
+    call = [http_expr(http), cs_str(base), path_lit]
+    call.append("query" if has_query else "null")
+    call.append("body" if has_body else "null")
+    call.append(f"AuthMode.{auth}")
+    call.append("ct")
+    L.append(f"    /// <summary>{doc}</summary>")
+    L.append(f"    public Task<ApiResult> {gp}_{mname}({', '.join(args)})")
+    L.append(f"        => _c.SendAsync({', '.join(call)});")
+L.append("}")
+(out_dir / "Endpoints.g.cs").write_text("\n".join(L), encoding="utf-8")
+
+# ---- EndpointCatalog.g.cs ------------------------------------------------
+C = []
+C.append("// <auto-generated> API Explorer data table. Regenerate with tools/gen_csharp.py. </auto-generated>")
+C.append("#nullable enable")
+C.append("namespace VivintDesktop.Api;")
+C.append("")
+C.append("public sealed record EndpointInfo(")
+C.append("    string Group, string Name, string Http, string BaseUrl, string PathTemplate,")
+C.append("    string[] PathParams, bool HasQuery, bool HasBody, AuthMode Auth)")
+C.append("{")
+C.append("    public string Label => $\"{Http,-6} {Group}.{Name}\";")
+C.append("    public string Signature => $\"{Http} {PathTemplate}\";")
+C.append("}")
+C.append("")
+C.append("public static class EndpointCatalog")
+C.append("{")
+C.append("    public static readonly EndpointInfo[] All = new EndpointInfo[]")
+C.append("    {")
+for (gp, mname, http, base, auth, path, pparams, has_query, has_body, doc) in methods:
+    pp = "new[] { " + ", ".join(cs_str(p) for p in pparams) + " }" if pparams else "System.Array.Empty<string>()"
+    C.append(f"        new({cs_str(gp)}, {cs_str(mname)}, {cs_str(http)}, {cs_str(base)}, "
+             f"{cs_str(path)}, {pp}, {str(has_query).lower()}, {str(has_body).lower()}, AuthMode.{auth}),")
+C.append("    };")
+C.append("}")
+(out_dir / "EndpointCatalog.g.cs").write_text("\n".join(C), encoding="utf-8")
+
+print(f"generated {len(methods)} endpoints into {out_dir}")

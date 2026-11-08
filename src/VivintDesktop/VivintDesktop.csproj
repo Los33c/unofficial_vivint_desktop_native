@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>VivintDesktop</AssemblyName>
+    <RootNamespace>VivintDesktop</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <Version>1.0</Version>
+    <Product>Vivint Desktop</Product>
+    <Description>Personal desktop client for your own Vivint system.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Keep the published folder lean: English only (the built-in fallback), so the
+         framework's cs/de/es/fr/... satellite resource folders aren't copied. -->
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <!-- Don't copy package XML doc files (e.g. WebView2's) into the output. -->
+    <PublishDocumentationFiles>false</PublishDocumentationFiles>
+    <PublishReferencesDocumentationFiles>false</PublishReferencesDocumentationFiles>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!-- No .pdb debug symbols in release builds (Debug builds keep them). -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- WinForms is only used for the tray icon; keep its names out of the global namespace. -->
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Embedded Edge browser used to host Vivint's real OAuth login page
+         (handles email/2FA challenges natively). -->
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2792.45" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Live camera video and clip playback: minimal custom libmpv (mpv v0.42.0, FFmpeg n9.0.2,
+         libplacebo v7.387.0), built by tools/libmpv/build-mpv.sh in WSL. Only RTSP/HTTPS,
+         H.264/H.265, Opus/AAC, d3d11 gpu-next + d3d11va, PNG snapshots. SHA-256 c771f072…de4cd1. -->
+    <None Include="native\libmpv-2.dll" Link="libmpv-2.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+</Project>
